@@ -1,0 +1,1044 @@
+Xshell 5 (Build 0983)
+Copyright (c) 2002-2016 NetSarang Computer, Inc. All rights reserved.
+
+Type `help' to learn how to use Xshell prompt.
+[c:\~]$ 
+
+Connecting to 52.37.185.36:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+Last login: Wed Jun 22 04:33:33 2016 from 123.151.22.194
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2016.03-release-notes/
+No packages needed for security; 4 packages available
+Run "sudo yum update" to apply all updates.
+[root@ip-10-2-0-181 ~]# vim 
+[root@ip-10-2-0-181 ~]# vim  /etc/hosts
+[root@ip-10-2-0-181 ~]# ssh compute01.loac
+ssh: Could not resolve hostname compute01.loac: Name or service not known
+[root@ip-10-2-0-181 ~]# ssh compute01.local
+Last login: Wed Jun 22 04:45:40 2016 from ip-10-2-0-181
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2016.03-release-notes/
+No packages needed for security; 2 packages available
+Run "sudo yum update" to apply all updates.
+[root@ip-10-2-8-60 ~]# vim /etc/hosts
+[root@ip-10-2-8-60 ~]# ssh io^C
+[root@ip-10-2-8-60 ~]# exit
+logout
+Connection to compute01.local closed.
+[root@ip-10-2-0-181 ~]# ssh io01.local
+The authenticity of host 'io01.local (10.2.11.94)' can't be established.
+ECDSA key fingerprint is e7:9d:f1:7d:8b:80:f3:f0:dc:dc:e8:b3:63:45:76:a6.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'io01.local' (ECDSA) to the list of known hosts.
+Last login: Wed Jun 22 05:00:32 2016 from 10.2.8.60
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2016.03-release-notes/
+No packages needed for security; 2 packages available
+Run "sudo yum update" to apply all updates.
+[root@ip-10-2-11-94 ~]# scp co^C
+[root@ip-10-2-11-94 ~]# vim /etc/hosts
+[root@ip-10-2-11-94 ~]# ls
+SGE6.2u5p2.tar
+[root@ip-10-2-11-94 ~]# cd /opt/
+[root@ip-10-2-11-94 opt]# ls
+aws
+[root@ip-10-2-11-94 opt]# scp compute01.local:/opt/^C
+[root@ip-10-2-11-94 opt]# cp -r  /data/gridengine/ ./
+[root@ip-10-2-11-94 opt]# cp -r  /data/sge/ ./ 
+[root@ip-10-2-11-94 opt]# ls
+aws  gridengine  sge
+[root@ip-10-2-11-94 opt]# cd gridengine/
+[root@ip-10-2-11-94 gridengine]# ls
+gridengine-8.1.8-1.el6.x86_64.rpm  gridengine-execd-8.1.8-1.el6.x86_64.rpm  gridengine-qmaster-8.1.8-1.el6.x86_64.rpm  gridengine-qmon-8.1.8-1.el6.x86_64.rpm  scp.sh
+[root@ip-10-2-11-94 gridengine]# rm gridengine-qmaster-8.1.8-1.el6.x86_64.rpm 
+rm: remove regular file ¡®gridengine-qmaster-8.1.8-1.el6.x86_64.rpm¡¯? y
+[root@ip-10-2-11-94 gridengine]# ls
+gridengine-8.1.8-1.el6.x86_64.rpm  gridengine-execd-8.1.8-1.el6.x86_64.rpm  gridengine-qmon-8.1.8-1.el6.x86_64.rpm  scp.sh
+[root@ip-10-2-11-94 gridengine]# yum install *.rpm 
+Loaded plugins: priorities, update-motd, upgrade-helper
+Examining gridengine-8.1.8-1.el6.x86_64.rpm: gridengine-8.1.8-1.el6.x86_64
+Marking gridengine-8.1.8-1.el6.x86_64.rpm to be installed
+Examining gridengine-execd-8.1.8-1.el6.x86_64.rpm: gridengine-execd-8.1.8-1.el6.x86_64
+Marking gridengine-execd-8.1.8-1.el6.x86_64.rpm to be installed
+Examining gridengine-qmon-8.1.8-1.el6.x86_64.rpm: gridengine-qmon-8.1.8-1.el6.x86_64
+Marking gridengine-qmon-8.1.8-1.el6.x86_64.rpm to be installed
+Resolving Dependencies
+amzn-main/latest                                                                                                                                                      | 2.1 kB     00:00     
+amzn-updates/latest                                                                                                                                                   | 2.3 kB     00:00     
+--> Running transaction check
+---> Package gridengine.x86_64 0:8.1.8-1.el6 will be installed
+--> Processing Dependency: /bin/csh for package: gridengine-8.1.8-1.el6.x86_64
+--> Processing Dependency: perl(Env) for package: gridengine-8.1.8-1.el6.x86_64
+--> Processing Dependency: perl(XML::Simple) for package: gridengine-8.1.8-1.el6.x86_64
+--> Processing Dependency: libhwloc.so.5()(64bit) for package: gridengine-8.1.8-1.el6.x86_64
+--> Processing Dependency: libjemalloc.so.1()(64bit) for package: gridengine-8.1.8-1.el6.x86_64
+---> Package gridengine-execd.x86_64 0:8.1.8-1.el6 will be installed
+--> Processing Dependency: xterm for package: gridengine-execd-8.1.8-1.el6.x86_64
+--> Processing Dependency: /bin/mail for package: gridengine-execd-8.1.8-1.el6.x86_64
+---> Package gridengine-qmon.x86_64 0:8.1.8-1.el6 will be installed
+--> Processing Dependency: xorg-x11-fonts-ISO8859-1-100dpi for package: gridengine-qmon-8.1.8-1.el6.x86_64
+--> Processing Dependency: xorg-x11-fonts-ISO8859-1-75dpi for package: gridengine-qmon-8.1.8-1.el6.x86_64
+--> Processing Dependency: libXm.so.4()(64bit) for package: gridengine-qmon-8.1.8-1.el6.x86_64
+--> Processing Dependency: libXt.so.6()(64bit) for package: gridengine-qmon-8.1.8-1.el6.x86_64
+--> Running transaction check
+---> Package hwloc-libs.x86_64 0:1.7-3.7.amzn1 will be installed
+--> Processing Dependency: libpciaccess.so.0()(64bit) for package: hwloc-libs-1.7-3.7.amzn1.x86_64
+---> Package jemalloc.x86_64 0:3.3.1-1.8.amzn1 will be installed
+---> Package libXt.x86_64 0:1.1.4-6.1.9.amzn1 will be installed
+---> Package mailx.x86_64 0:12.4-8.8.amzn1 will be installed
+---> Package openmotif.x86_64 0:2.3.3-7.1.10.amzn1 will be installed
+amzn-main/latest/filelists_db                                                                                                                                         | 5.0 MB     00:00     
+amzn-updates/latest/filelists_db                                                                                                                                      | 1.5 MB     00:00     
+--> Processing Dependency: libXft.so.2()(64bit) for package: openmotif-2.3.3-7.1.10.amzn1.x86_64
+--> Processing Dependency: libXmu.so.6()(64bit) for package: openmotif-2.3.3-7.1.10.amzn1.x86_64
+--> Processing Dependency: libXp.so.6()(64bit) for package: openmotif-2.3.3-7.1.10.amzn1.x86_64
+---> Package perl-Env.noarch 0:1.04-2.5.amzn1 will be installed
+---> Package perl-XML-Simple.noarch 0:2.20-5.12.amzn1 will be installed
+--> Processing Dependency: perl(XML::SAX) for package: perl-XML-Simple-2.20-5.12.amzn1.noarch
+--> Processing Dependency: perl(XML::NamespaceSupport) for package: perl-XML-Simple-2.20-5.12.amzn1.noarch
+--> Processing Dependency: perl(XML::Parser) for package: perl-XML-Simple-2.20-5.12.amzn1.noarch
+---> Package tcsh.x86_64 0:6.17-24.12.amzn1 will be installed
+---> Package xorg-x11-fonts-ISO8859-1-100dpi.noarch 0:7.2-9.1.5.amzn1 will be installed
+---> Package xorg-x11-fonts-ISO8859-1-75dpi.noarch 0:7.2-9.1.5.amzn1 will be installed
+---> Package xterm.x86_64 0:253-1.6.amzn1 will be installed
+--> Processing Dependency: libXaw.so.7()(64bit) for package: xterm-253-1.6.amzn1.x86_64
+--> Running transaction check
+---> Package libXaw.x86_64 0:1.0.11-2.8.amzn1 will be installed
+--> Processing Dependency: libXpm.so.4()(64bit) for package: libXaw-1.0.11-2.8.amzn1.x86_64
+---> Package libXft.x86_64 0:2.3.1-2.7.amzn1 will be installed
+---> Package libXmu.x86_64 0:1.1.1-2.8.amzn1 will be installed
+---> Package libXp.x86_64 0:1.0.0-15.1.6.amzn1 will be installed
+---> Package libpciaccess.x86_64 0:0.13.1-4.1.11.amzn1 will be installed
+---> Package perl-XML-NamespaceSupport.noarch 0:1.11-10.8.amzn1 will be installed
+---> Package perl-XML-Parser.x86_64 0:2.41-10.9.amzn1 will be installed
+---> Package perl-XML-SAX.noarch 0:0.99-9.13.amzn1 will be installed
+--> Processing Dependency: perl(LWP::UserAgent) for package: perl-XML-SAX-0.99-9.13.amzn1.noarch
+--> Processing Dependency: perl(XML::SAX::Exception) for package: perl-XML-SAX-0.99-9.13.amzn1.noarch
+--> Processing Dependency: perl(XML::SAX::Base) for package: perl-XML-SAX-0.99-9.13.amzn1.noarch
+--> Running transaction check
+---> Package libXpm.x86_64 0:3.5.10-2.9.amzn1 will be installed
+---> Package perl-XML-SAX-Base.noarch 0:1.08-7.5.amzn1 will be installed
+---> Package perl-libwww-perl.noarch 0:6.05-2.17.amzn1 will be installed
+--> Processing Dependency: perl(HTTP::Daemon) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(WWW::RobotRules) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Response) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Negotiate) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Status) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Request) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Date) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Cookies) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTTP::Request::Common) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(URI) >= 1.10 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(Net::HTTP) >= 6.04 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(File::Listing) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(LWP::MediaTypes) >= 6 for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(URI::Heuristic) for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(URI::Escape) for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTML::Entities) for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(Encode::Locale) for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Processing Dependency: perl(HTML::HeadParser) for package: perl-libwww-perl-6.05-2.17.amzn1.noarch
+--> Running transaction check
+---> Package perl-Encode-Locale.noarch 0:1.03-5.8.amzn1 will be installed
+---> Package perl-File-Listing.noarch 0:6.04-7.11.amzn1 will be installed
+---> Package perl-HTML-Parser.x86_64 0:3.71-4.7.amzn1 will be installed
+--> Processing Dependency: perl(HTML::Tagset) >= 3 for package: perl-HTML-Parser-3.71-4.7.amzn1.x86_64
+---> Package perl-HTTP-Cookies.noarch 0:6.01-5.12.amzn1 will be installed
+---> Package perl-HTTP-Daemon.noarch 0:6.01-5.11.amzn1 will be installed
+---> Package perl-HTTP-Date.noarch 0:6.02-8.8.amzn1 will be installed
+--> Processing Dependency: perl(Time::Zone) for package: perl-HTTP-Date-6.02-8.8.amzn1.noarch
+---> Package perl-HTTP-Message.noarch 0:6.06-6.10.amzn1 will be installed
+--> Processing Dependency: perl(IO::Compress::Bzip2) >= 2.021 for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::Uncompress::Bunzip2) >= 2.021 for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::Uncompress::Inflate) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::Compress::Gzip) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::Uncompress::Gunzip) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::Compress::Deflate) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::Uncompress::RawInflate) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(Compress::Raw::Zlib) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+--> Processing Dependency: perl(IO::HTML) for package: perl-HTTP-Message-6.06-6.10.amzn1.noarch
+---> Package perl-HTTP-Negotiate.noarch 0:6.01-5.12.amzn1 will be installed
+---> Package perl-LWP-MediaTypes.noarch 0:6.02-2.9.amzn1 will be installed
+---> Package perl-Net-HTTP.noarch 0:6.06-2.11.amzn1 will be installed
+--> Processing Dependency: perl(IO::Socket::SSL) >= 1.38 for package: perl-Net-HTTP-6.06-2.11.amzn1.noarch
+---> Package perl-URI.noarch 0:1.60-9.8.amzn1 will be installed
+--> Processing Dependency: perl(Data::Dumper) for package: perl-URI-1.60-9.8.amzn1.noarch
+--> Processing Dependency: perl(Business::ISBN) for package: perl-URI-1.60-9.8.amzn1.noarch
+---> Package perl-WWW-RobotRules.noarch 0:6.02-5.12.amzn1 will be installed
+--> Running transaction check
+---> Package perl-Business-ISBN.noarch 0:2.06-2.7.amzn1 will be installed
+--> Processing Dependency: perl(Business::ISBN::Data) >= 20120719.001 for package: perl-Business-ISBN-2.06-2.7.amzn1.noarch
+---> Package perl-Compress-Raw-Zlib.x86_64 1:2.061-4.1.amzn1 will be installed
+---> Package perl-Data-Dumper.x86_64 0:2.145-3.5.amzn1 will be installed
+---> Package perl-HTML-Tagset.noarch 0:3.20-15.7.amzn1 will be installed
+---> Package perl-IO-Compress.noarch 0:2.061-2.12.amzn1 will be installed
+--> Processing Dependency: perl(Compress::Raw::Bzip2) >= 2.061 for package: perl-IO-Compress-2.061-2.12.amzn1.noarch
+---> Package perl-IO-HTML.noarch 0:1.00-2.5.amzn1 will be installed
+---> Package perl-IO-Socket-SSL.noarch 0:1.94-3.13.amzn1 will be installed
+--> Processing Dependency: perl(Net::SSLeay) >= 1.21 for package: perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch
+--> Processing Dependency: perl(IO::Socket::IP) >= 0.20 for package: perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch
+--> Processing Dependency: perl(Net::LibIDN) for package: perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch
+--> Processing Dependency: perl(Net::SSLeay) for package: perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch
+---> Package perl-TimeDate.noarch 1:2.30-2.7.amzn1 will be installed
+--> Running transaction check
+---> Package perl-Business-ISBN-Data.noarch 0:20120719.001-2.7.amzn1 will be installed
+---> Package perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.11.amzn1 will be installed
+---> Package perl-IO-Socket-IP.noarch 0:0.21-4.5.amzn1 will be installed
+---> Package perl-Net-LibIDN.x86_64 0:0.12-15.6.amzn1 will be installed
+---> Package perl-Net-SSLeay.x86_64 0:1.65-2.10.amzn1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=============================================================================================================================================================================================
+ Package                                             Arch                       Version                                       Repository                                                Size
+=============================================================================================================================================================================================
+Installing:
+ gridengine                                          x86_64                     8.1.8-1.el6                                   /gridengine-8.1.8-1.el6.x86_64                            40 M
+ gridengine-execd                                    x86_64                     8.1.8-1.el6                                   /gridengine-execd-8.1.8-1.el6.x86_64                     3.8 M
+ gridengine-qmon                                     x86_64                     8.1.8-1.el6                                   /gridengine-qmon-8.1.8-1.el6.x86_64                      4.6 M
+Installing for dependencies:
+ hwloc-libs                                          x86_64                     1.7-3.7.amzn1                                 amzn-main                                                1.5 M
+ jemalloc                                            x86_64                     3.3.1-1.8.amzn1                               amzn-main                                                111 k
+ libXaw                                              x86_64                     1.0.11-2.8.amzn1                              amzn-main                                                201 k
+ libXft                                              x86_64                     2.3.1-2.7.amzn1                               amzn-main                                                 59 k
+ libXmu                                              x86_64                     1.1.1-2.8.amzn1                               amzn-main                                                 75 k
+ libXp                                               x86_64                     1.0.0-15.1.6.amzn1                            amzn-main                                                 20 k
+ libXpm                                              x86_64                     3.5.10-2.9.amzn1                              amzn-main                                                 54 k
+ libXt                                               x86_64                     1.1.4-6.1.9.amzn1                             amzn-main                                                185 k
+ libpciaccess                                        x86_64                     0.13.1-4.1.11.amzn1                           amzn-main                                                 26 k
+ mailx                                               x86_64                     12.4-8.8.amzn1                                amzn-main                                                254 k
+ openmotif                                           x86_64                     2.3.3-7.1.10.amzn1                            amzn-main                                                1.6 M
+ perl-Business-ISBN                                  noarch                     2.06-2.7.amzn1                                amzn-main                                                 25 k
+ perl-Business-ISBN-Data                             noarch                     20120719.001-2.7.amzn1                        amzn-main                                                 26 k
+ perl-Compress-Raw-Bzip2                             x86_64                     2.061-3.11.amzn1                              amzn-main                                                 33 k
+ perl-Compress-Raw-Zlib                              x86_64                     1:2.061-4.1.amzn1                             amzn-main                                                 61 k
+ perl-Data-Dumper                                    x86_64                     2.145-3.5.amzn1                               amzn-main                                                 49 k
+ perl-Encode-Locale                                  noarch                     1.03-5.8.amzn1                                amzn-main                                                 16 k
+ perl-Env                                            noarch                     1.04-2.5.amzn1                                amzn-main                                                 16 k
+ perl-File-Listing                                   noarch                     6.04-7.11.amzn1                               amzn-main                                                 13 k
+ perl-HTML-Parser                                    x86_64                     3.71-4.7.amzn1                                amzn-main                                                119 k
+ perl-HTML-Tagset                                    noarch                     3.20-15.7.amzn1                               amzn-main                                                 18 k
+ perl-HTTP-Cookies                                   noarch                     6.01-5.12.amzn1                               amzn-main                                                 27 k
+ perl-HTTP-Daemon                                    noarch                     6.01-5.11.amzn1                               amzn-main                                                 21 k
+ perl-HTTP-Date                                      noarch                     6.02-8.8.amzn1                                amzn-main                                                 14 k
+ perl-HTTP-Message                                   noarch                     6.06-6.10.amzn1                               amzn-main                                                 84 k
+ perl-HTTP-Negotiate                                 noarch                     6.01-5.12.amzn1                               amzn-main                                                 17 k
+ perl-IO-Compress                                    noarch                     2.061-2.12.amzn1                              amzn-main                                                298 k
+ perl-IO-HTML                                        noarch                     1.00-2.5.amzn1                                amzn-main                                                 24 k
+ perl-IO-Socket-IP                                   noarch                     0.21-4.5.amzn1                                amzn-main                                                 38 k
+ perl-IO-Socket-SSL                                  noarch                     1.94-3.13.amzn1                               amzn-main                                                118 k
+ perl-LWP-MediaTypes                                 noarch                     6.02-2.9.amzn1                                amzn-main                                                 25 k
+ perl-Net-HTTP                                       noarch                     6.06-2.11.amzn1                               amzn-main                                                 29 k
+ perl-Net-LibIDN                                     x86_64                     0.12-15.6.amzn1                               amzn-main                                                 29 k
+ perl-Net-SSLeay                                     x86_64                     1.65-2.10.amzn1                               amzn-main                                                361 k
+ perl-TimeDate                                       noarch                     1:2.30-2.7.amzn1                              amzn-main                                                 53 k
+ perl-URI                                            noarch                     1.60-9.8.amzn1                                amzn-main                                                109 k
+ perl-WWW-RobotRules                                 noarch                     6.02-5.12.amzn1                               amzn-main                                                 18 k
+ perl-XML-NamespaceSupport                           noarch                     1.11-10.8.amzn1                               amzn-main                                                 19 k
+ perl-XML-Parser                                     x86_64                     2.41-10.9.amzn1                               amzn-main                                                277 k
+ perl-XML-SAX                                        noarch                     0.99-9.13.amzn1                               amzn-main                                                 65 k
+ perl-XML-SAX-Base                                   noarch                     1.08-7.5.amzn1                                amzn-main                                                 40 k
+ perl-XML-Simple                                     noarch                     2.20-5.12.amzn1                               amzn-main                                                 77 k
+ perl-libwww-perl                                    noarch                     6.05-2.17.amzn1                               amzn-main                                                215 k
+ tcsh                                                x86_64                     6.17-24.12.amzn1                              amzn-main                                                511 k
+ xorg-x11-fonts-ISO8859-1-100dpi                     noarch                     7.2-9.1.5.amzn1                               amzn-main                                                1.0 M
+ xorg-x11-fonts-ISO8859-1-75dpi                      noarch                     7.2-9.1.5.amzn1                               amzn-main                                                925 k
+ xterm                                               x86_64                     253-1.6.amzn1                                 amzn-main                                                386 k
+
+Transaction Summary
+=============================================================================================================================================================================================
+Install  3 Packages (+47 Dependent packages)
+
+Total size: 58 M
+Total download size: 9.1 M
+Installed size: 65 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/47): hwloc-libs-1.7-3.7.amzn1.x86_64.rpm                                                                                                                           | 1.5 MB     00:00     
+(2/47): jemalloc-3.3.1-1.8.amzn1.x86_64.rpm                                                                                                                           | 111 kB     00:00     
+(3/47): libXaw-1.0.11-2.8.amzn1.x86_64.rpm                                                                                                                            | 201 kB     00:00     
+(4/47): libXft-2.3.1-2.7.amzn1.x86_64.rpm                                                                                                                             |  59 kB     00:00     
+(5/47): libXmu-1.1.1-2.8.amzn1.x86_64.rpm                                                                                                                             |  75 kB     00:00     
+(6/47): libXp-1.0.0-15.1.6.amzn1.x86_64.rpm                                                                                                                           |  20 kB     00:00     
+(7/47): libXpm-3.5.10-2.9.amzn1.x86_64.rpm                                                                                                                            |  54 kB     00:00     
+(8/47): libXt-1.1.4-6.1.9.amzn1.x86_64.rpm                                                                                                                            | 185 kB     00:00     
+(9/47): libpciaccess-0.13.1-4.1.11.amzn1.x86_64.rpm                                                                                                                   |  26 kB     00:00     
+(10/47): mailx-12.4-8.8.amzn1.x86_64.rpm                                                                                                                              | 254 kB     00:00     
+(11/47): openmotif-2.3.3-7.1.10.amzn1.x86_64.rpm                                                                                                                      | 1.6 MB     00:00     
+(12/47): perl-Business-ISBN-2.06-2.7.amzn1.noarch.rpm                                                                                                                 |  25 kB     00:00     
+(13/47): perl-Business-ISBN-Data-20120719.001-2.7.amzn1.noarch.rpm                                                                                                    |  26 kB     00:00     
+(14/47): perl-Compress-Raw-Bzip2-2.061-3.11.amzn1.x86_64.rpm                                                                                                          |  33 kB     00:00     
+(15/47): perl-Compress-Raw-Zlib-2.061-4.1.amzn1.x86_64.rpm                                                                                                            |  61 kB     00:00     
+(16/47): perl-Data-Dumper-2.145-3.5.amzn1.x86_64.rpm                                                                                                                  |  49 kB     00:00     
+(17/47): perl-Encode-Locale-1.03-5.8.amzn1.noarch.rpm                                                                                                                 |  16 kB     00:00     
+(18/47): perl-Env-1.04-2.5.amzn1.noarch.rpm                                                                                                                           |  16 kB     00:00     
+(19/47): perl-File-Listing-6.04-7.11.amzn1.noarch.rpm                                                                                                                 |  13 kB     00:00     
+(20/47): perl-HTML-Parser-3.71-4.7.amzn1.x86_64.rpm                                                                                                                   | 119 kB     00:00     
+(21/47): perl-HTML-Tagset-3.20-15.7.amzn1.noarch.rpm                                                                                                                  |  18 kB     00:00     
+(22/47): perl-HTTP-Cookies-6.01-5.12.amzn1.noarch.rpm                                                                                                                 |  27 kB     00:00     
+(23/47): perl-HTTP-Daemon-6.01-5.11.amzn1.noarch.rpm                                                                                                                  |  21 kB     00:00     
+(24/47): perl-HTTP-Date-6.02-8.8.amzn1.noarch.rpm                                                                                                                     |  14 kB     00:00     
+(25/47): perl-HTTP-Message-6.06-6.10.amzn1.noarch.rpm                                                                                                                 |  84 kB     00:00     
+(26/47): perl-HTTP-Negotiate-6.01-5.12.amzn1.noarch.rpm                                                                                                               |  17 kB     00:00     
+(27/47): perl-IO-Compress-2.061-2.12.amzn1.noarch.rpm                                                                                                                 | 298 kB     00:00     
+(28/47): perl-IO-HTML-1.00-2.5.amzn1.noarch.rpm                                                                                                                       |  24 kB     00:00     
+(29/47): perl-IO-Socket-IP-0.21-4.5.amzn1.noarch.rpm                                                                                                                  |  38 kB     00:00     
+(30/47): perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch.rpm                                                                                                                | 118 kB     00:00     
+(31/47): perl-LWP-MediaTypes-6.02-2.9.amzn1.noarch.rpm                                                                                                                |  25 kB     00:00     
+(32/47): perl-Net-HTTP-6.06-2.11.amzn1.noarch.rpm                                                                                                                     |  29 kB     00:00     
+(33/47): perl-Net-LibIDN-0.12-15.6.amzn1.x86_64.rpm                                                                                                                   |  29 kB     00:00     
+(34/47): perl-Net-SSLeay-1.65-2.10.amzn1.x86_64.rpm                                                                                                                   | 361 kB     00:00     
+(35/47): perl-TimeDate-2.30-2.7.amzn1.noarch.rpm                                                                                                                      |  53 kB     00:00     
+(36/47): perl-URI-1.60-9.8.amzn1.noarch.rpm                                                                                                                           | 109 kB     00:00     
+(37/47): perl-WWW-RobotRules-6.02-5.12.amzn1.noarch.rpm                                                                                                               |  18 kB     00:00     
+(38/47): perl-XML-NamespaceSupport-1.11-10.8.amzn1.noarch.rpm                                                                                                         |  19 kB     00:00     
+(39/47): perl-XML-Parser-2.41-10.9.amzn1.x86_64.rpm                                                                                                                   | 277 kB     00:00     
+(40/47): perl-XML-SAX-0.99-9.13.amzn1.noarch.rpm                                                                                                                      |  65 kB     00:00     
+(41/47): perl-XML-SAX-Base-1.08-7.5.amzn1.noarch.rpm                                                                                                                  |  40 kB     00:00     
+(42/47): perl-XML-Simple-2.20-5.12.amzn1.noarch.rpm                                                                                                                   |  77 kB     00:00     
+(43/47): perl-libwww-perl-6.05-2.17.amzn1.noarch.rpm                                                                                                                  | 215 kB     00:00     
+(44/47): tcsh-6.17-24.12.amzn1.x86_64.rpm                                                                                                                             | 511 kB     00:00     
+(45/47): xorg-x11-fonts-ISO8859-1-100dpi-7.2-9.1.5.amzn1.noarch.rpm                                                                                                   | 1.0 MB     00:00     
+(46/47): xorg-x11-fonts-ISO8859-1-75dpi-7.2-9.1.5.amzn1.noarch.rpm                                                                                                    | 925 kB     00:00     
+(47/47): xterm-253-1.6.amzn1.x86_64.rpm                                                                                                                               | 386 kB     00:00     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                                                                        6.1 MB/s | 9.1 MB  00:00:01     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : libXt-1.1.4-6.1.9.amzn1.x86_64                                                                                                                                           1/50 
+  Installing : libXmu-1.1.1-2.8.amzn1.x86_64                                                                                                                                            2/50 
+  Installing : 1:perl-Compress-Raw-Zlib-2.061-4.1.amzn1.x86_64                                                                                                                          3/50 
+  Installing : jemalloc-3.3.1-1.8.amzn1.x86_64                                                                                                                                          4/50 
+  Installing : perl-LWP-MediaTypes-6.02-2.9.amzn1.noarch                                                                                                                                5/50 
+  Installing : perl-XML-NamespaceSupport-1.11-10.8.amzn1.noarch                                                                                                                         6/50 
+  Installing : libXft-2.3.1-2.7.amzn1.x86_64                                                                                                                                            7/50 
+  Installing : perl-Data-Dumper-2.145-3.5.amzn1.x86_64                                                                                                                                  8/50 
+  Installing : perl-Encode-Locale-1.03-5.8.amzn1.noarch                                                                                                                                 9/50 
+  Installing : libpciaccess-0.13.1-4.1.11.amzn1.x86_64                                                                                                                                 10/50 
+  Installing : hwloc-libs-1.7-3.7.amzn1.x86_64                                                                                                                                         11/50 
+  Installing : libXpm-3.5.10-2.9.amzn1.x86_64                                                                                                                                          12/50 
+  Installing : libXaw-1.0.11-2.8.amzn1.x86_64                                                                                                                                          13/50 
+  Installing : xterm-253-1.6.amzn1.x86_64                                                                                                                                              14/50 
+  Installing : perl-IO-HTML-1.00-2.5.amzn1.noarch                                                                                                                                      15/50 
+  Installing : libXp-1.0.0-15.1.6.amzn1.x86_64                                                                                                                                         16/50 
+  Installing : openmotif-2.3.3-7.1.10.amzn1.x86_64                                                                                                                                     17/50 
+  Installing : xorg-x11-fonts-ISO8859-1-100dpi-7.2-9.1.5.amzn1.noarch                                                                                                                  18/50 
+  Installing : perl-Net-LibIDN-0.12-15.6.amzn1.x86_64                                                                                                                                  19/50 
+  Installing : perl-XML-Parser-2.41-10.9.amzn1.x86_64                                                                                                                                  20/50 
+  Installing : xorg-x11-fonts-ISO8859-1-75dpi-7.2-9.1.5.amzn1.noarch                                                                                                                   21/50 
+  Installing : perl-Env-1.04-2.5.amzn1.noarch                                                                                                                                          22/50 
+  Installing : perl-IO-Socket-IP-0.21-4.5.amzn1.noarch                                                                                                                                 23/50 
+  Installing : 1:perl-TimeDate-2.30-2.7.amzn1.noarch                                                                                                                                   24/50 
+  Installing : perl-HTTP-Date-6.02-8.8.amzn1.noarch                                                                                                                                    25/50 
+  Installing : perl-File-Listing-6.04-7.11.amzn1.noarch                                                                                                                                26/50 
+  Installing : mailx-12.4-8.8.amzn1.x86_64                                                                                                                                             27/50 
+  Installing : tcsh-6.17-24.12.amzn1.x86_64                                                                                                                                            28/50 
+  Installing : perl-Business-ISBN-Data-20120719.001-2.7.amzn1.noarch                                                                                                                   29/50 
+  Installing : perl-Business-ISBN-2.06-2.7.amzn1.noarch                                                                                                                                30/50 
+  Installing : perl-URI-1.60-9.8.amzn1.noarch                                                                                                                                          31/50 
+  Installing : perl-WWW-RobotRules-6.02-5.12.amzn1.noarch                                                                                                                              32/50 
+  Installing : perl-Compress-Raw-Bzip2-2.061-3.11.amzn1.x86_64                                                                                                                         33/50 
+  Installing : perl-IO-Compress-2.061-2.12.amzn1.noarch                                                                                                                                34/50 
+  Installing : perl-HTTP-Message-6.06-6.10.amzn1.noarch                                                                                                                                35/50 
+  Installing : perl-HTTP-Daemon-6.01-5.11.amzn1.noarch                                                                                                                                 36/50 
+  Installing : perl-HTTP-Cookies-6.01-5.12.amzn1.noarch                                                                                                                                37/50 
+  Installing : perl-HTTP-Negotiate-6.01-5.12.amzn1.noarch                                                                                                                              38/50 
+  Installing : perl-XML-SAX-Base-1.08-7.5.amzn1.noarch                                                                                                                                 39/50 
+  Installing : perl-HTML-Tagset-3.20-15.7.amzn1.noarch                                                                                                                                 40/50 
+  Installing : perl-HTML-Parser-3.71-4.7.amzn1.x86_64                                                                                                                                  41/50 
+  Installing : perl-Net-SSLeay-1.65-2.10.amzn1.x86_64                                                                                                                                  42/50 
+  Installing : perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch                                                                                                                               43/50 
+  Installing : perl-Net-HTTP-6.06-2.11.amzn1.noarch                                                                                                                                    44/50 
+  Installing : perl-libwww-perl-6.05-2.17.amzn1.noarch                                                                                                                                 45/50 
+  Installing : perl-XML-SAX-0.99-9.13.amzn1.noarch                                                                                                                                     46/50 
+  Installing : perl-XML-Simple-2.20-5.12.amzn1.noarch                                                                                                                                  47/50 
+  Installing : gridengine-8.1.8-1.el6.x86_64                                                                                                                                           48/50 
+Updating index cache for path `/opt/sge/man/man8'. Wait...
+Purging old database entries in /opt/sge/man...
+Processing manual pages under /opt/sge/man...
+Updating index cache for path `/opt/sge/man/man1'. Wait...
+Updating index cache for path `/opt/sge/man/man5'. Wait...
+done.
+Checking for stray cats under /opt/sge/man...
+mandb: warning: /opt/sge/man/cat1/CACHEDIR.TAG: ignoring bogus filename
+mandb: warning: /opt/sge/man/cat8/CACHEDIR.TAG: ignoring bogus filename
+mandb: warning: /opt/sge/man/cat5/CACHEDIR.TAG: ignoring bogus filename
+Processing manual pages under /opt/sge/man/cat1...
+Processing manual pages under /opt/sge/man/cat8...
+Processing manual pages under /opt/sge/man/cat5...
+3 man subdirectories contained newer manual pages.
+18 manual pages were added.
+0 stray cats were added.
+0 old database entries were purged.
+  Installing : gridengine-qmon-8.1.8-1.el6.x86_64                                                                                                                                      49/50 
+  Installing : gridengine-execd-8.1.8-1.el6.x86_64                                                                                                                                     50/50 
+  Verifying  : gridengine-qmon-8.1.8-1.el6.x86_64                                                                                                                                       1/50 
+  Verifying  : openmotif-2.3.3-7.1.10.amzn1.x86_64                                                                                                                                      2/50 
+  Verifying  : libXt-1.1.4-6.1.9.amzn1.x86_64                                                                                                                                           3/50 
+  Verifying  : perl-URI-1.60-9.8.amzn1.noarch                                                                                                                                           4/50 
+  Verifying  : perl-Net-SSLeay-1.65-2.10.amzn1.x86_64                                                                                                                                   5/50 
+  Verifying  : perl-HTML-Tagset-3.20-15.7.amzn1.noarch                                                                                                                                  6/50 
+  Verifying  : perl-WWW-RobotRules-6.02-5.12.amzn1.noarch                                                                                                                               7/50 
+  Verifying  : libXaw-1.0.11-2.8.amzn1.x86_64                                                                                                                                           8/50 
+  Verifying  : perl-XML-SAX-Base-1.08-7.5.amzn1.noarch                                                                                                                                  9/50 
+  Verifying  : hwloc-libs-1.7-3.7.amzn1.x86_64                                                                                                                                         10/50 
+  Verifying  : perl-IO-Compress-2.061-2.12.amzn1.noarch                                                                                                                                11/50 
+  Verifying  : perl-Encode-Locale-1.03-5.8.amzn1.noarch                                                                                                                                12/50 
+  Verifying  : xterm-253-1.6.amzn1.x86_64                                                                                                                                              13/50 
+  Verifying  : perl-HTTP-Date-6.02-8.8.amzn1.noarch                                                                                                                                    14/50 
+  Verifying  : perl-Business-ISBN-2.06-2.7.amzn1.noarch                                                                                                                                15/50 
+  Verifying  : libXmu-1.1.1-2.8.amzn1.x86_64                                                                                                                                           16/50 
+  Verifying  : perl-Compress-Raw-Bzip2-2.061-3.11.amzn1.x86_64                                                                                                                         17/50 
+  Verifying  : perl-LWP-MediaTypes-6.02-2.9.amzn1.noarch                                                                                                                               18/50 
+  Verifying  : perl-Business-ISBN-Data-20120719.001-2.7.amzn1.noarch                                                                                                                   19/50 
+  Verifying  : perl-Data-Dumper-2.145-3.5.amzn1.x86_64                                                                                                                                 20/50 
+  Verifying  : perl-File-Listing-6.04-7.11.amzn1.noarch                                                                                                                                21/50 
+  Verifying  : tcsh-6.17-24.12.amzn1.x86_64                                                                                                                                            22/50 
+  Verifying  : perl-Net-HTTP-6.06-2.11.amzn1.noarch                                                                                                                                    23/50 
+  Verifying  : perl-XML-Simple-2.20-5.12.amzn1.noarch                                                                                                                                  24/50 
+  Verifying  : gridengine-execd-8.1.8-1.el6.x86_64                                                                                                                                     25/50 
+  Verifying  : perl-libwww-perl-6.05-2.17.amzn1.noarch                                                                                                                                 26/50 
+  Verifying  : mailx-12.4-8.8.amzn1.x86_64                                                                                                                                             27/50 
+  Verifying  : 1:perl-TimeDate-2.30-2.7.amzn1.noarch                                                                                                                                   28/50 
+  Verifying  : perl-IO-Socket-IP-0.21-4.5.amzn1.noarch                                                                                                                                 29/50 
+  Verifying  : perl-Env-1.04-2.5.amzn1.noarch                                                                                                                                          30/50 
+  Verifying  : perl-HTTP-Daemon-6.01-5.11.amzn1.noarch                                                                                                                                 31/50 
+  Verifying  : libXft-2.3.1-2.7.amzn1.x86_64                                                                                                                                           32/50 
+  Verifying  : xorg-x11-fonts-ISO8859-1-75dpi-7.2-9.1.5.amzn1.noarch                                                                                                                   33/50 
+  Verifying  : jemalloc-3.3.1-1.8.amzn1.x86_64                                                                                                                                         34/50 
+  Verifying  : perl-HTML-Parser-3.71-4.7.amzn1.x86_64                                                                                                                                  35/50 
+  Verifying  : perl-XML-NamespaceSupport-1.11-10.8.amzn1.noarch                                                                                                                        36/50 
+  Verifying  : perl-XML-Parser-2.41-10.9.amzn1.x86_64                                                                                                                                  37/50 
+  Verifying  : perl-Net-LibIDN-0.12-15.6.amzn1.x86_64                                                                                                                                  38/50 
+  Verifying  : perl-XML-SAX-0.99-9.13.amzn1.noarch                                                                                                                                     39/50 
+  Verifying  : xorg-x11-fonts-ISO8859-1-100dpi-7.2-9.1.5.amzn1.noarch                                                                                                                  40/50 
+  Verifying  : gridengine-8.1.8-1.el6.x86_64                                                                                                                                           41/50 
+  Verifying  : 1:perl-Compress-Raw-Zlib-2.061-4.1.amzn1.x86_64                                                                                                                         42/50 
+  Verifying  : perl-HTTP-Cookies-6.01-5.12.amzn1.noarch                                                                                                                                43/50 
+  Verifying  : perl-IO-Socket-SSL-1.94-3.13.amzn1.noarch                                                                                                                               44/50 
+  Verifying  : perl-HTTP-Negotiate-6.01-5.12.amzn1.noarch                                                                                                                              45/50 
+  Verifying  : libXp-1.0.0-15.1.6.amzn1.x86_64                                                                                                                                         46/50 
+  Verifying  : perl-HTTP-Message-6.06-6.10.amzn1.noarch                                                                                                                                47/50 
+  Verifying  : perl-IO-HTML-1.00-2.5.amzn1.noarch                                                                                                                                      48/50 
+  Verifying  : libXpm-3.5.10-2.9.amzn1.x86_64                                                                                                                                          49/50 
+  Verifying  : libpciaccess-0.13.1-4.1.11.amzn1.x86_64                                                                                                                                 50/50 
+
+Installed:
+  gridengine.x86_64 0:8.1.8-1.el6                            gridengine-execd.x86_64 0:8.1.8-1.el6                            gridengine-qmon.x86_64 0:8.1.8-1.el6                           
+
+Dependency Installed:
+  hwloc-libs.x86_64 0:1.7-3.7.amzn1                               jemalloc.x86_64 0:3.3.1-1.8.amzn1                          libXaw.x86_64 0:1.0.11-2.8.amzn1                                
+  libXft.x86_64 0:2.3.1-2.7.amzn1                                 libXmu.x86_64 0:1.1.1-2.8.amzn1                            libXp.x86_64 0:1.0.0-15.1.6.amzn1                               
+  libXpm.x86_64 0:3.5.10-2.9.amzn1                                libXt.x86_64 0:1.1.4-6.1.9.amzn1                           libpciaccess.x86_64 0:0.13.1-4.1.11.amzn1                       
+  mailx.x86_64 0:12.4-8.8.amzn1                                   openmotif.x86_64 0:2.3.3-7.1.10.amzn1                      perl-Business-ISBN.noarch 0:2.06-2.7.amzn1                      
+  perl-Business-ISBN-Data.noarch 0:20120719.001-2.7.amzn1         perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.11.amzn1          perl-Compress-Raw-Zlib.x86_64 1:2.061-4.1.amzn1                 
+  perl-Data-Dumper.x86_64 0:2.145-3.5.amzn1                       perl-Encode-Locale.noarch 0:1.03-5.8.amzn1                 perl-Env.noarch 0:1.04-2.5.amzn1                                
+  perl-File-Listing.noarch 0:6.04-7.11.amzn1                      perl-HTML-Parser.x86_64 0:3.71-4.7.amzn1                   perl-HTML-Tagset.noarch 0:3.20-15.7.amzn1                       
+  perl-HTTP-Cookies.noarch 0:6.01-5.12.amzn1                      perl-HTTP-Daemon.noarch 0:6.01-5.11.amzn1                  perl-HTTP-Date.noarch 0:6.02-8.8.amzn1                          
+  perl-HTTP-Message.noarch 0:6.06-6.10.amzn1                      perl-HTTP-Negotiate.noarch 0:6.01-5.12.amzn1               perl-IO-Compress.noarch 0:2.061-2.12.amzn1                      
+  perl-IO-HTML.noarch 0:1.00-2.5.amzn1                            perl-IO-Socket-IP.noarch 0:0.21-4.5.amzn1                  perl-IO-Socket-SSL.noarch 0:1.94-3.13.amzn1                     
+  perl-LWP-MediaTypes.noarch 0:6.02-2.9.amzn1                     perl-Net-HTTP.noarch 0:6.06-2.11.amzn1                     perl-Net-LibIDN.x86_64 0:0.12-15.6.amzn1                        
+  perl-Net-SSLeay.x86_64 0:1.65-2.10.amzn1                        perl-TimeDate.noarch 1:2.30-2.7.amzn1                      perl-URI.noarch 0:1.60-9.8.amzn1                                
+  perl-WWW-RobotRules.noarch 0:6.02-5.12.amzn1                    perl-XML-NamespaceSupport.noarch 0:1.11-10.8.amzn1         perl-XML-Parser.x86_64 0:2.41-10.9.amzn1                        
+  perl-XML-SAX.noarch 0:0.99-9.13.amzn1                           perl-XML-SAX-Base.noarch 0:1.08-7.5.amzn1                  perl-XML-Simple.noarch 0:2.20-5.12.amzn1                        
+  perl-libwww-perl.noarch 0:6.05-2.17.amzn1                       tcsh.x86_64 0:6.17-24.12.amzn1                             xorg-x11-fonts-ISO8859-1-100dpi.noarch 0:7.2-9.1.5.amzn1        
+  xorg-x11-fonts-ISO8859-1-75dpi.noarch 0:7.2-9.1.5.amzn1         xterm.x86_64 0:253-1.6.amzn1                              
+
+Complete!
+[root@ip-10-2-11-94 gridengine]# ls
+gridengine-8.1.8-1.el6.x86_64.rpm  gridengine-execd-8.1.8-1.el6.x86_64.rpm  gridengine-qmon-8.1.8-1.el6.x86_64.rpm  scp.sh
+[root@ip-10-2-11-94 gridengine]# cd ..
+[root@ip-10-2-11-94 opt]# ls
+aws  gridengine  sge
+[root@ip-10-2-11-94 opt]# cd sge/
+[root@ip-10-2-11-94 sge]# ls
+bin  default  doc  examples  install_execd  install_qmaster  inst_sge  lib  man  mpi  pvm  qmon  util  utilbin
+[root@ip-10-2-11-94 sge]# ./install_execd 
+
+Welcome to the Grid Engine execution host installation
+------------------------------------------------------
+
+If you haven't installed the Grid Engine qmaster host yet, you must execute
+this step (with >install_qmaster<) prior the execution host installation.
+
+For a successful installation you need a running Grid Engine qmaster. It is
+also necessary that this host is an administrative host.
+
+You can verify your current list of administrative hosts with
+the command:
+
+   # qconf -sh
+
+You can add an administrative host with the command:
+
+   # qconf -ah <hostname>
+
+The execution host installation will take approximately 5 minutes.
+
+Hit <RETURN> to continue >> 
+
+
+Checking $SGE_ROOT directory
+----------------------------
+
+The Grid Engine root directory is not set!
+Please enter a correct path for SGE_ROOT.
+
+If this directory is not correct (e.g. it may contain an automounter
+prefix) enter the correct path to this directory or hit <RETURN>
+to use default [/opt/sge] >> 
+Your $SGE_ROOT directory: /opt/sge
+
+Hit <RETURN> to continue >> 
+
+
+Grid Engine cells
+-----------------
+
+Please enter the cell name which you used for the qmaster
+installation or press <RETURN> to use [default] >> 
+
+Using cell: >default<
+
+Hit <RETURN> to continue >> 
+
+
+
+Grid Engine TCP/IP communication service
+----------------------------------------
+
+The port for sge_execd is currently set as service.
+
+   sge_execd service set to port 6445
+
+Hit <RETURN> to continue >>
+
+Checking hostname resolving
+---------------------------
+
+This hostname is known at qmaster as an administrative host.
+
+Hit <RETURN> to continue >>
+
+Execd spool directory configuration
+-----------------------------------
+
+You defined a global spool directory when you installed the master host.
+You can use that directory for spooling jobs from this execution host
+or you can define a different spool directory for this execution host.
+
+ATTENTION: For most operating systems, the spool directory does not have to
+be located on a local disk. The spool directory can be located on a 
+network filesystem. However, using a local spool directory provides 
+better performance.
+
+FOR WINDOWS USERS: On Windows systems, the spool directory MUST be located
+on a local disk. If you install an execution daemon on a Windows system
+without a local spool directory, the execution host is unusable.
+
+The spool directory is currently set to:
+<</opt/sge/default/spool/ip-10-2-11-94>>
+
+Do you want to configure a different spool directory
+for this host (y/n) [n] >> 
+
+Creating local configuration
+----------------------------
+sgeadmin@ip-10-2-11-94 added "ip-10-2-11-94" to configuration list
+Local configuration for host >ip-10-2-11-94< created.
+
+Hit <RETURN> to continue >> 
+
+execd startup script
+--------------------
+
+We can install the startup script that will
+start execd at machine boot (y/n) [y] >> 
+
+Installing startup script /etc/rc.d/rc3.d/S96sgeexecd.p6444 and /etc/rc.d/rc3.d/K02sgeexecd.p6444
+
+Hit <RETURN> to continue >> 
+
+Grid Engine execution daemon startup
+------------------------------------
+
+Starting execution daemon. Please wait ...
+   Starting Grid Engine execution daemon
+
+Hit <RETURN> to continue >> 
+
+Adding a queue for this host
+----------------------------
+
+We can now add a queue instance for this host:
+
+   - it is added to the >allhosts< hostgroup
+   - the queue provides 8 slot(s) for jobs in all queues
+     referencing the >allhosts< hostgroup
+
+You do not need to add this host now, but before running jobs on this host
+it must be added to at least one queue.
+
+Do you want to add a default queue instance for this host (y/n) [y] >> 
+
+root@ip-10-2-11-94 modified "@allhosts" in host group list
+root@ip-10-2-11-94 modified "all.q" in cluster queue list
+
+Hit <RETURN> to continue >> 
+
+
+
+Using Grid Engine
+-----------------
+
+You should now enter the command:
+
+   source /opt/sge/default/common/settings.csh
+
+if you are a csh/tcsh user or
+
+   # . /opt/sge/default/common/settings.sh
+
+if you are a sh/bash/ksh user.
+
+This will set or expand the following environment variables:
+
+   - $SGE_ROOT         (always necessary)
+   - $SGE_CELL         (if you are using a cell other than >default<)
+   - $SGE_CLUSTER_NAME (always necessary)
+   - $SGE_QMASTER_PORT (if you haven't added the service >sge_qmaster<)
+   - $SGE_EXECD_PORT   (if you haven't added the service >sge_execd<)
+   - $PATH/$path       (to find the Grid Engine binaries)
+   - $MANPATH          (to access the manual pages)
+Alternatively use module(1) after installing /opt/sge/default/common/sge.module
+
+Hit <RETURN> to see where Grid Engine logs messages >> 
+
+Grid Engine messages
+--------------------
+
+Grid Engine messages can be found in syslog during startup:
+
+After startup the daemons log their messages in their spool directories.
+
+   Qmaster:     /opt/sge/default/spool/qmaster/messages
+   Exec daemon: <execd_spool_dir>/<hostname>/messages
+or in syslog, if configured
+
+
+Grid Engine startup scripts
+---------------------------
+
+Grid Engine startup scripts can be found at:
+
+   /opt/sge/default/common/sgemaster (qmaster)
+   /opt/sge/default/common/sgeexecd (execd)
+
+Do you want to see previous screen about using Grid Engine again (y/n) [n] >> 
+
+Your execution daemon installation is now completed.
+[root@ip-10-2-11-94 sge]# netstat  -ntpl
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:111                 0.0.0.0:*                   LISTEN      2786/rpcbind        
+tcp        0      0 0.0.0.0:57936               0.0.0.0:*                   LISTEN      3618/rpc.mountd     
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      2967/sshd           
+tcp        0      0 0.0.0.0:42103               0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      3009/sendmail       
+tcp        0      0 0.0.0.0:2049                0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 0.0.0.0:55875               0.0.0.0:*                   LISTEN      3618/rpc.mountd     
+tcp        0      0 0.0.0.0:44676               0.0.0.0:*                   LISTEN      2807/rpc.statd      
+tcp        0      0 0.0.0.0:43589               0.0.0.0:*                   LISTEN      3618/rpc.mountd     
+tcp        0      0 0.0.0.0:875                 0.0.0.0:*                   LISTEN      3613/rpc.rquotad    
+tcp        0      0 :::54798                    :::*                        LISTEN      2807/rpc.statd      
+tcp        0      0 :::111                      :::*                        LISTEN      2786/rpcbind        
+tcp        0      0 :::22                       :::*                        LISTEN      2967/sshd           
+tcp        0      0 :::39965                    :::*                        LISTEN      3618/rpc.mountd     
+tcp        0      0 :::2049                     :::*                        LISTEN      -                   
+tcp        0      0 :::42532                    :::*                        LISTEN      3618/rpc.mountd     
+tcp        0      0 :::33253                    :::*                        LISTEN      -                   
+tcp        0      0 :::57318                    :::*                        LISTEN      3618/rpc.mountd     
+[root@ip-10-2-11-94 sge]# ls
+bin  default  doc  examples  install_execd  install_qmaster  inst_sge  lib  man  mpi  pvm  qmon  util  utilbin
+[root@ip-10-2-11-94 sge]# cd default/
+[root@ip-10-2-11-94 default]# ls
+common  spool
+[root@ip-10-2-11-94 default]# cd common/
+[root@ip-10-2-11-94 common]# ls
+accounting   bootstrap     configuration  qtask                settings.csh  sge_aliases  sgemaster   sge_request
+act_qmaster  cluster_name  local_conf     sched_configuration  settings.sh   sgeexecd     sge.module
+[root@ip-10-2-11-94 common]# cd ..
+[root@ip-10-2-11-94 default]# ls
+common  spool
+[root@ip-10-2-11-94 default]# cd spool/
+[root@ip-10-2-11-94 spool]# ls
+ip-10-2-0-181  qmaster
+[root@ip-10-2-11-94 spool]# rm -r ip-10-2-0-181
+rm: descend into directory ¡®ip-10-2-0-181¡¯? ^C
+[root@ip-10-2-11-94 spool]# rm -rf ip-10-2-0-181
+[root@ip-10-2-11-94 spool]# mkdir ip-10-2-11-94
+[root@ip-10-2-11-94 spool]# chmod -R 777 ip-10-2-11-94
+[root@ip-10-2-11-94 spool]# cd qmaster/
+[root@ip-10-2-11-94 qmaster]# ls
+admin_hosts           arseqnum   centry  cqueues     heartbeat   jobs         jobseqnum  messages   pe        qinstances   resource_quotas  users     zombies
+advance_reservations  calendars  ckpt    exec_hosts  hostgroups  job_scripts  managers   operators  projects  qmaster.pid  submit_hosts     usersets
+[root@ip-10-2-11-94 qmaster]# rm -rf *
+[root@ip-10-2-11-94 qmaster]# cd ..
+[root@ip-10-2-11-94 spool]# ls
+ip-10-2-11-94  qmaster
+[root@ip-10-2-11-94 spool]# cd ..
+[root@ip-10-2-11-94 default]# ls
+common  spool
+[root@ip-10-2-11-94 default]# cd common/
+[root@ip-10-2-11-94 common]# ls
+accounting   bootstrap     configuration  qtask                settings.csh  sge_aliases  sgemaster   sge_request
+act_qmaster  cluster_name  local_conf     sched_configuration  settings.sh   sgeexecd     sge.module
+[root@ip-10-2-11-94 common]# cd ..
+[root@ip-10-2-11-94 default]# ls
+common  spool
+[root@ip-10-2-11-94 default]# cd ..
+[root@ip-10-2-11-94 sge]# ls
+bin  default  doc  examples  install_execd  install_qmaster  inst_sge  lib  man  mpi  pvm  qmon  util  utilbin
+[root@ip-10-2-11-94 sge]# cd bin/
+[root@ip-10-2-11-94 bin]# ls
+busy-nodes  dead-nodes  idle-nodes  jobstats  lx-amd64  nodes-in-job  process-scheduler-log  qsched  qselect-node-list  qstatus  sge-disable-submits  sge-enable-submits
+[root@ip-10-2-11-94 bin]# cd lx-amd64/
+[root@ip-10-2-11-94 lx-amd64]# ls
+qacct   qconf  qevent  qhost   qmake  qmon   qquota  qresub  qrsh    qrsub    qsh    qsub   sge_coshepherd  sgepasswd    sge_shadowd    sge_shepherd
+qalter  qdel   qhold   qlogin  qmod   qping  qrdel   qrls    qrstat  qselect  qstat  qtcsh  sge_execd       sge_qmaster  sge_share_mon
+[root@ip-10-2-11-94 lx-amd64]# ./sge_execd 
+critical error: Please set the environment variable SGE_ROOT.
+[root@ip-10-2-11-94 lx-amd64]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda1      148G  1.2G  147G   1% /
+devtmpfs         30G   68K   30G   1% /dev
+tmpfs            30G     0   30G   0% /dev/shm
+/dev/xvdf1      689G   20G  635G   4% /data
+[root@ip-10-2-11-94 lx-amd64]# ls /data/
+daijiwei  gridengine  profile.d  sge  test  test2  test3
+[root@ip-10-2-11-94 lx-amd64]# cp   /data/profile.d/*  /data/profile.d/
+cp: ¡®/data/profile.d/aws-apitools-common.sh¡¯ and ¡®/data/profile.d/aws-apitools-common.sh¡¯ are the same file
+cp: ¡®/data/profile.d/aws-cli.sh¡¯ and ¡®/data/profile.d/aws-cli.sh¡¯ are the same file
+cp: ¡®/data/profile.d/colorgrep.csh¡¯ and ¡®/data/profile.d/colorgrep.csh¡¯ are the same file
+cp: ¡®/data/profile.d/colorgrep.sh¡¯ and ¡®/data/profile.d/colorgrep.sh¡¯ are the same file
+cp: ¡®/data/profile.d/colorls.csh¡¯ and ¡®/data/profile.d/colorls.csh¡¯ are the same file
+cp: ¡®/data/profile.d/colorls.sh¡¯ and ¡®/data/profile.d/colorls.sh¡¯ are the same file
+cp: ¡®/data/profile.d/lang.csh¡¯ and ¡®/data/profile.d/lang.csh¡¯ are the same file
+cp: ¡®/data/profile.d/lang.sh¡¯ and ¡®/data/profile.d/lang.sh¡¯ are the same file
+cp: ¡®/data/profile.d/less.csh¡¯ and ¡®/data/profile.d/less.csh¡¯ are the same file
+cp: ¡®/data/profile.d/less.sh¡¯ and ¡®/data/profile.d/less.sh¡¯ are the same file
+cp: ¡®/data/profile.d/sge.sh¡¯ and ¡®/data/profile.d/sge.sh¡¯ are the same file
+cp: ¡®/data/profile.d/vim.csh¡¯ and ¡®/data/profile.d/vim.csh¡¯ are the same file
+cp: ¡®/data/profile.d/vim.sh¡¯ and ¡®/data/profile.d/vim.sh¡¯ are the same file
+cp: ¡®/data/profile.d/which2.sh¡¯ and ¡®/data/profile.d/which2.sh¡¯ are the same file
+[root@ip-10-2-11-94 lx-amd64]# cp   /data/profile.d/*  /etc/profile.d/
+cp: overwrite ¡®/etc/profile.d/aws-apitools-common.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/aws-cli.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/colorgrep.csh¡¯? u
+cp: overwrite ¡®/etc/profile.d/colorgrep.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/colorls.csh¡¯? u
+cp: overwrite ¡®/etc/profile.d/colorls.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/lang.csh¡¯? u
+cp: overwrite ¡®/etc/profile.d/lang.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/less.csh¡¯? u
+cp: overwrite ¡®/etc/profile.d/less.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/vim.csh¡¯? u
+cp: overwrite ¡®/etc/profile.d/vim.sh¡¯? u
+cp: overwrite ¡®/etc/profile.d/which2.sh¡¯? u
+[root@ip-10-2-11-94 lx-amd64]# cp   /data/profile.d/*  /etc/profile.d/
+cp: overwrite ¡®/etc/profile.d/aws-apitools-common.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/aws-cli.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/colorgrep.csh¡¯? y
+cp: overwrite ¡®/etc/profile.d/colorgrep.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/colorls.csh¡¯? y
+cp: overwrite ¡®/etc/profile.d/colorls.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/lang.csh¡¯? y
+cp: overwrite ¡®/etc/profile.d/lang.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/less.csh¡¯? y
+cp: overwrite ¡®/etc/profile.d/less.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/sge.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/vim.csh¡¯? y
+cp: overwrite ¡®/etc/profile.d/vim.sh¡¯? y
+cp: overwrite ¡®/etc/profile.d/which2.sh¡¯? y
+[root@ip-10-2-11-94 lx-amd64]# y
+-bash: y: command not found
+[root@ip-10-2-11-94 lx-amd64]# 
+[root@ip-10-2-11-94 lx-amd64]# 
+[root@ip-10-2-11-94 lx-amd64]# 
+[root@ip-10-2-11-94 lx-amd64]# ls
+qacct   qconf  qevent  qhost   qmake  qmon   qquota  qresub  qrsh    qrsub    qsh    qsub   sge_coshepherd  sgepasswd    sge_shadowd    sge_shepherd
+qalter  qdel   qhold   qlogin  qmod   qping  qrdel   qrls    qrstat  qselect  qstat  qtcsh  sge_execd       sge_qmaster  sge_share_mon
+[root@ip-10-2-11-94 lx-amd64]# ./sge_execd
+critical error: Please set the environment variable SGE_ROOT.
+[root@ip-10-2-11-94 lx-amd64]# vim /etc/pro
+profile    profile.d/ protocols  
+[root@ip-10-2-11-94 lx-amd64]# vim /etc/pro
+profile    profile.d/ protocols  
+[root@ip-10-2-11-94 lx-amd64]# vim /etc/profile.d/
+aws-apitools-common.sh  colorgrep.csh           colorls.csh             lang.csh                less.csh                sge.sh                  vim.sh
+aws-cli.sh              colorgrep.sh            colorls.sh              lang.sh                 less.sh                 vim.csh                 which2.sh
+[root@ip-10-2-11-94 lx-amd64]# vim /etc/profile.d/sge.sh 
+[root@ip-10-2-11-94 lx-amd64]# source  /etc/profile.d/sge.sh
+[root@ip-10-2-11-94 lx-amd64]# ./sge_execd
+error: cell directory "/opt/sge/sgetest" doesn't exist
+[root@ip-10-2-11-94 lx-amd64]# ls /opt/sge/
+bin  default  doc  examples  install_execd  install_qmaster  inst_sge  lib  man  mpi  pvm  qmon  util  utilbin
+[root@ip-10-2-11-94 lx-amd64]# source  /etc/profile.d/sge.sh
+[root@ip-10-2-11-94 lx-amd64]# vim   /etc/profile.d/sge.sh
+[root@ip-10-2-11-94 lx-amd64]# source  /etc/profile.d/sge.sh
+[root@ip-10-2-11-94 lx-amd64]# ./sge_execd
+error: cell directory "/opt/sge/sgetest" doesn't exist
+[root@ip-10-2-11-94 lx-amd64]# vim   /etc/profile.d/sge.sh
+[root@ip-10-2-11-94 lx-amd64]# exit
+logout
+Connection to io01.local closed.
+[root@ip-10-2-0-181 ~]# ssh io01.local
+Last login: Wed Jun 22 05:05:37 2016 from 10.2.0.181
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2016.03-release-notes/
+No packages needed for security; 2 packages available
+Run "sudo yum update" to apply all updates.
+[root@ip-10-2-11-94 ~]# exit^C
+[root@ip-10-2-11-94 ~]# cd /opt/sge/
+[root@ip-10-2-11-94 sge]# ls
+bin  default  doc  examples  install_execd  install_qmaster  inst_sge  lib  man  mpi  pvm  qmon  util  utilbin
+[root@ip-10-2-11-94 sge]# cd bin/
+[root@ip-10-2-11-94 bin]# ls
+busy-nodes  dead-nodes  idle-nodes  jobstats  lx-amd64  nodes-in-job  process-scheduler-log  qsched  qselect-node-list  qstatus  sge-disable-submits  sge-enable-submits
+[root@ip-10-2-11-94 bin]# cd lx-amd64/
+[root@ip-10-2-11-94 lx-amd64]# ls
+qacct   qconf  qevent  qhost   qmake  qmon   qquota  qresub  qrsh    qrsub    qsh    qsub   sge_coshepherd  sgepasswd    sge_shadowd    sge_shepherd
+qalter  qdel   qhold   qlogin  qmod   qping  qrdel   qrls    qrstat  qselect  qstat  qtcsh  sge_execd       sge_qmaster  sge_share_mon
+[root@ip-10-2-11-94 lx-amd64]# ./sge_execd 
+[root@ip-10-2-11-94 lx-amd64]# netstat  -ntpl
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:111                 0.0.0.0:*                   LISTEN      2786/rpcbind        
+tcp        0      0 0.0.0.0:57936               0.0.0.0:*                   LISTEN      3618/rpc.mountd     
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      2967/sshd           
+tcp        0      0 0.0.0.0:42103               0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      3009/sendmail       
+tcp        0      0 0.0.0.0:2049                0.0.0.0:*                   LISTEN      -                   
+tcp        0      0 0.0.0.0:55875               0.0.0.0:*                   LISTEN      3618/rpc.mountd     
+tcp        0      0 0.0.0.0:44676               0.0.0.0:*                   LISTEN      2807/rpc.statd      
+tcp        0      0 0.0.0.0:43589               0.0.0.0:*                   LISTEN      3618/rpc.mountd     
+tcp        0      0 0.0.0.0:875                 0.0.0.0:*                   LISTEN      3613/rpc.rquotad    
+tcp        0      0 0.0.0.0:6445                0.0.0.0:*                   LISTEN      4562/./sge_execd    
+tcp        0      0 :::54798                    :::*                        LISTEN      2807/rpc.statd      
+tcp        0      0 :::111                      :::*                        LISTEN      2786/rpcbind        
+tcp        0      0 :::22                       :::*                        LISTEN      2967/sshd           
+tcp        0      0 :::39965                    :::*                        LISTEN      3618/rpc.mountd     
+tcp        0      0 :::2049                     :::*                        LISTEN      -                   
+tcp        0      0 :::42532                    :::*                        LISTEN      3618/rpc.mountd     
+tcp        0      0 :::33253                    :::*                        LISTEN      -                   
+tcp        0      0 :::57318                    :::*                        LISTEN      3618/rpc.mountd     
+[root@ip-10-2-11-94 lx-amd64]# qhost 
+HOSTNAME                ARCH         NCPU NSOC NCOR NTHR  LOAD  MEMTOT  MEMUSE  SWAPTO  SWAPUS
+----------------------------------------------------------------------------------------------
+global                  -               -    -    -    -     -       -       -       -       -
+ip-10-2-0-181           lx-amd64        8    1    4    8  0.01   31.4G  167.7M     0.0     0.0
+ip-10-2-11-94           lx-amd64        8    1    4    8  0.01   60.0G  216.2M     0.0     0.0
+ip-10-2-8-60            lx-amd64       16    1    8   16  0.01   29.4G  200.3M     0.0     0.0
+[root@ip-10-2-11-94 lx-amd64]# qhost 
+HOSTNAME                ARCH         NCPU NSOC NCOR NTHR  LOAD  MEMTOT  MEMUSE  SWAPTO  SWAPUS
+----------------------------------------------------------------------------------------------
+global                  -               -    -    -    -     -       -       -       -       -
+ip-10-2-0-181           lx-amd64        8    1    4    8  0.01   31.4G  167.7M     0.0     0.0
+ip-10-2-11-94           lx-amd64        8    1    4    8  0.01   60.0G  216.2M     0.0     0.0
+ip-10-2-8-60            lx-amd64       16    1    8   16  0.01   29.4G  200.3M     0.0     0.0
+[root@ip-10-2-11-94 lx-amd64]# qconf -sql
+all.q
+[root@ip-10-2-11-94 lx-amd64]# history 
+    1  clear
+    2  useradd daijiwei
+    3  echo novogene |passwd --stdin daijiwei
+    4  echo novogene |passwd --stdin root
+    5  clear
+    6  vim /etc/sudoers
+    7  vim /etc/ssh/
+    8  vim /etc/ssh/sshd_config 
+    9  /etc/init.d/sshd restart
+   10  exit
+   11  clear
+   12  ssh-keygen -t rsa
+   13  ls
+   14  cd .ssh/
+   15  ls
+   16  cat id_rsa.pub 
+   17  vim authorized_keys 
+   18  exit
+   19  ls
+   20  cd .ssh/
+   21  ls
+   22  cat authorized_keys 
+   23  vim authorized_keys 
+   24  clear
+   25  df -h
+   26  fdisk -l
+   27  clear
+   28  df -h
+   29  fdisk -l
+   30  mkdir /data
+   31  mount /dev/xvdf /data/
+   32  fdisk /dev/xvdf 
+   33  ll /dev/xvdf*
+   34  mount /dev/xvdf1 mount /dev/xvdf1  /data/
+   35  mount /dev/xvdf1 /data/
+   36  df -h
+   37  mount -w /dev/xvdf1 /data/
+   38  df -h
+   39  iptables -L
+   40  setenforce 0
+   41  route -n
+   42  top
+   43  less /proc/sys/net/ipv4/icmp_echo_ignore_all
+   44  exit
+   45  clear
+   46  df -h
+   47  fdisk -l
+   48  mount /dev/xvdf1 /data/
+   49  dmesg |
+   50  dmesg 
+   51  mkfs.ext4 /dev/xvdf1 
+   52  mount /dev/xvdf1  /data/
+   53  df -h
+   54  vim /etc/exports
+   55  ifconfig
+   56  vim /etc/exports
+   57  /etc/init.d/nfs restart
+   58  ifconfig
+   59  /etc/init.d/iptables stop
+   60  df -h
+   61  cd /data/
+   62  ls
+   63  cd 
+   64  clear
+   65  ls
+   66  vim /etc/exports
+   67  /etc/init.d/nfs restart
+   68  netstat -ntpl
+   69  netstat -ntp
+   70  netstat -ntpl |grep nfs
+   71  clear
+   72  vim /etc/exports
+   73  showmount -e 10.2.11.94
+   74  ping 10.2.8.60
+   75  vim /etc/exports
+   76  /etc/init.d/nfs restart
+   77  vim /etc/exports
+   78  ls
+   79  cd /data/
+   80  ls
+   81  touch 1
+   82  mkdir 123
+   83  ll
+   84  vim /etc/exports
+   85  /etc/init.d/nfs restart
+   86  cat /etc/exports
+   87  history
+   88  df -h
+   89  mount
+   90  vim /etc/rc.local 
+   91  clear
+   92  service  nfs restart
+   93  exit
+   94  vim /etc/hosts
+   95  ls
+   96  cd /opt/
+   97  ls
+   98  cp -r  /data/gridengine/ ./
+   99  cp -r  /data/sge/ ./ 
+  100  ls
+  101  cd gridengine/
+  102  ls
+  103  rm gridengine-qmaster-8.1.8-1.el6.x86_64.rpm 
+  104  ls
+  105  yum install *.rpm 
+  106  ls
+  107  cd ..
+  108  ls
+  109  cd sge/
+  110  ls
+  111  ./install_execd 
+  112  netstat  -ntpl
+  113  ls
+  114  cd default/
+  115  ls
+  116  cd common/
+  117  ls
+  118  cd ..
+  119  ls
+  120  cd spool/
+  121  ls
+  122  rm -r ip-10-2-0-181
+  123  rm -rf ip-10-2-0-181
+  124  mkdir ip-10-2-11-94
+  125  chmod -R 777 ip-10-2-11-94
+  126  cd qmaster/
+  127  ls
+  128  rm -rf *
+  129  cd ..
+  130  ls
+  131  cd ..
+  132  ls
+  133  cd common/
+  134  ls
+  135  cd ..
+  136  ls
+  137  cd ..
+  138  ls
+  139  cd bin/
+  140  ls
+  141  cd lx-amd64/
+  142  ls
+  143  ./sge_execd 
+  144  df -h
+  145  ls /data/
+  146  cp   /data/profile.d/*  /data/profile.d/
+  147  cp   /data/profile.d/*  /etc/profile.d/
+  148  y
+  149  ls
+  150  ./sge_execd
+  151  vim /etc/profile.d/sge.sh 
+  152  source  /etc/profile.d/sge.sh
+  153  ./sge_execd
+  154  ls /opt/sge/
+  155  source  /etc/profile.d/sge.sh
+  156  vim   /etc/profile.d/sge.sh
+  157  source  /etc/profile.d/sge.sh
+  158  ./sge_execd
+  159  vim   /etc/profile.d/sge.sh
+  160  exit
+  161  cd /opt/sge/
+  162  ls
+  163  cd bin/
+  164  ls
+  165  cd lx-amd64/
+  166  ls
+  167  ./sge_execd 
+  168  netstat  -ntpl
+  169  qhost 
+  170  qconf -sql
+  171  history 
+[root@ip-10-2-11-94 lx-amd64]# 

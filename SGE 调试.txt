@@ -1,0 +1,923 @@
+ cat /etc/passwd
+    2  ls
+    3  cat user
+    4  cat /PROJ/list/name/3 
+    5  cat /PROJ/list/name/3  > user
+    6  ls
+    7  sh nologin.sh 
+    8  ssh tjnode03
+    9  ssh tjnode01
+   10  cd /TJPROJ1/Trash/
+   11  ls
+   12  cd sge/
+   13  ls
+   14  cat 123.py 
+   15  vim 123.py 
+   16  ssh tjnode01
+   17  ls
+   18  sh data.sh 
+   19  ls
+   20  cat a
+   21  vim a
+   22  qacct -o  -b 201504010000 -e 201504022359 -h tjnode08
+   23  cd /TJPROJ1/Trash/sge/
+   24  ls
+   25  sh data.sh 
+   26  cat  data.sh 
+   27  cat a
+   28  ls
+   29  cat data.sh 
+   30  do qacct -o  -b 201504010000 -e 201504302359 -h tjbnode01.local
+   31   qacct -o  -b 201504010000 -e 201504302359 -h tjbnode01.local
+   32  vim data.sh 
+   33  ls
+   34  cat a 
+   35  cat a  |awk '{print $3,$7}'
+   36  cat a  |awk '{print $3,$7}' > z
+   37  ls
+   38  python 321.py 
+   39  cat x.txt 
+   40  ls
+   41  python 123.py 
+   42  ls
+   43  cd /PROJ/list/name/
+   44  ls
+   45  cat 1
+   46  cat 2
+   47  cat 3
+   48  cat 4
+   49  l
+   50  ssh tjnode02
+   51  ssh tjnode03
+   52  ssh tjnode04
+   53  ssh tjnode03
+   54  ssh tjnode01
+   55  vim /etc/passwd
+   56  cat /etc/passwd |grep cuisijia
+   57  vim /etc/passwd
+   58  cp /etc/passwd /PROJ/root/password/
+   59  cd /PROJ/root/passwd
+   60  ls
+   61  for i in `cat user`;do id $i ;done
+   62  for i in `cat user`;do cat /etc/passwd |grep  $i ;done
+   63  ssh tjnode01
+   64  ssh tjnode03
+   65  id wankangkang
+   66  vi /etc/hosts
+   67  route  -n
+   68  ifconfig 
+   69  w
+   70  df -h
+   71  ping tjnovogene1.isilon.com
+   72  ping tjnovogene2.isilon.com
+   73  ping tjnovogene3.isilon.com
+   74  ifconfig 
+   75  w
+   76  ls
+   77  qhost 
+   78  less /etc/passwd
+   79  less /etc/group
+   80  less /etc/shadow
+   81  ls
+   82  df -h
+   83  ssh 172.17.1.102
+   84  ls /quota/BJPROJ/GR/PD/
+   85  w
+   86  ls
+   87  exit
+   88  cd /TJPROJ1/Trash/
+   89  ls
+   90  cd daijiwei/
+   91  ls
+   92  mkdir disk
+   93  ls
+   94  cd disk/
+   95  ls
+   96  touch tjproj
+   97  touch bjproj
+   98  touch proj
+   99  vim tjproj 
+  100  cat bjproj  |awk '{print $3,$8}'
+  101  cat bjproj  
+  102  cat *
+  103  ls
+  104  cat tjproj 
+  105  cat tjproj > bjproj 
+  106  echo > tjproj 
+  107  cat tjproj 
+  108  cat bjproj |awk '{print $3,$8}'
+  109  vim bjproj 
+  110  cat bjproj |awk '{print $1}'
+  111  vim bjproj 
+  112  vim proj 
+  113  cat proj |awk '{print $3,$8}'
+  114  vim proj 
+  115  vim tjproj 
+  116  cat tjproj |awk '{print $3,$8}'
+  117  vim tjproj 
+  118  ls
+  119  clear
+  120  cat proj |awk '{print $1}'
+  121  cat proj |awk '{print $2}'
+  122  cat bjproj |awk '{print $2}'
+  123  cat bjproj |awk '{print $1}'
+  124  cat bjproj |awk '{print $2}'
+  125  cat tjproj |awk '{print $1}'
+  126  cat tjproj |awk '{print $2}'
+  127  cd /share/apps/novo/
+  128  ./dreport 
+  129  cd /home/
+  130  du -sm * |sort -rn
+  131  ssh 172.17.1.102
+  132  ssh 10.10.200.254
+  133  ssh 10.10.200.41
+  134  clear
+  135  cd /TJPROJ2/PD/
+  136  ll
+  137  cd niuzexiong/
+  138  ll
+  139  cd TP/
+  140  ll
+  141  cd ..
+  142  ll
+  143  cd /TJPROJ1/Trash/
+  144  ls
+  145  cd daijiwei/
+  146  ls
+  147  cd ..
+  148  ls
+  149  cd daijiwei/
+  150  ls
+  151  cd .
+  152  ls
+  153  cd ..
+  154  ls
+  155  cd /home/yanglihua/
+  156  ls
+  157  cd disk/
+  158  ls
+  159  cd ..
+  160  ls
+  161  cd report/
+  162  ls
+  163  cat isilon.conf 
+  164  ssh 10.10.200.71
+  165  w
+  166  cat /etc/hosts |grep node04
+  167  ssh tjnode04
+  168  ssh tjnode108
+  169  ssh tjnode111
+  170  ssh tjnode03
+  171  cd /TJPROJ2/RESEQ/Project/Population/WGS/NHT140071_Yangtze_Alligator_S40/GenomeDown/
+  172  ls
+  173  cd Gavialisgangeticus/
+  174  ls
+  175  cd Reseq/
+  176  ls
+  177  ssh tjnode02
+  178  ssh tjnode03
+  179  clear
+  180  ls
+  181  clear
+  182  which perl
+  183  ssh tjnode03
+  184  ls
+  185  cd /TJPROJ2/HUMAN/Database/ANNOVAR/
+  186  ls
+  187  which perl
+  188  sh perl_download.sh 
+  189  pwd
+  190  which perl
+  191  ./perl_download_ljb26_each.sh 
+  192  qmon
+  193  ssh tjnode02
+  194  qmon
+  195  ssh tjnode03
+  196  ssh tjnode01
+  197  ssh tjnode04
+  198  ssh tjnode156
+  199  cd /PROJ/MICRO/share/MetaGenome_pipeline/MetaGenome_pipeline_V0.2/database/Gutmeta/Human/Gene/
+  200  ls
+  201  cat cds.list.txt 
+  202  pwd
+  203  ls
+  204  ll
+  205  cd 
+  206  ls
+  207  cd /TJPROJ1/Trash/
+  208  ls
+  209  md5sum wget > wget.md5
+  210  cat wget.md5 
+  211  md5sum -c wget.md5 
+  212  rm -rf wget.md5 
+  213  clear
+  214  md5sum -help
+  215  md5sum -h
+  216  md5sum --help
+  217  id haojing
+  218  ssh tjnode02
+  219  cd /share/apps/novo/
+  220  ls
+  221  ./genpasswd -h
+  222  ./genpasswd -l 5
+  223  ./genpasswd -l 100
+  224  ./genpasswd -l 1000
+  225  ./genpasswd -l 10000
+  226  ls
+  227  top
+  228  ssh tjnode01
+  229  cd /TJPROJ1/Trash/sge/
+  230  ls
+  231  cat x.txt 
+  232  cat x.txt  |grep tangqianzi
+  233  cat x.txt  |grep tangqi
+  234  cat x.txt  |grep qian
+  235  ls
+  236  clear
+  237  cd /TJPROJ2/RESEQ/Project/Population/WGS/NHT140071_Yangtze_Alligator_S40/GenomeDown/Crocodylus/Reseq/
+  238  ls
+  239  vim list
+  240  ls
+  241  vim list1
+  242  vim list2
+  243  ssh tjnode05
+  244  ssh 172.17.1.201
+  245  clear
+  246  cd /TJPROJ2/CR/share/
+  247  ls
+  248  cd pipeline/
+  249  ls
+  250  cd cancerPipelineV2/
+  251  ls
+  252  vim cancerPipelineV2.1.pl 
+  253  ll
+  254  pwd
+  255  cd /TJPROJ2/
+  256  ll
+  257  cd RESEQ/
+  258  cd ../CR
+  259  ll
+  260  df -h |grep PD
+  261  df -h |grep RESEQ
+  262  df -h |grep TP
+  263  cd /BJPROJ/GR/TP/
+  264  ll
+  265  df -h |more
+  266  cd 
+  267  ls
+  268  cd /TJPROJ1/Trash/
+  269  ls
+  270  cd sge/
+  271  ls
+  272  cd M
+  273  cd MAY/
+  274  ls
+  275  cat x.txt 
+  276  cat z
+  277  ls
+  278  cat x.txt 
+  279  du -sh *
+  280  cp ../RESEQ 
+  281  cp ../RESEQ .
+  282  ls
+  283  cat RESEQ 
+  284  for i in `cat RESEQ`;do cat x.txt |grep $i ;done
+  285  ls
+  286  cd ..
+  287  ls
+  288  for i in `cat RESEQ`;do cat x.txt |grep $i ;done
+  289  cat RESEQ 
+  290  cat x.txt 
+  291  ls
+  292  cat x.txt 
+  293  ls
+  294  for i in `cat RESEQ`;do cat x.txt |grep $i ;done
+  295  cat z 
+  296  for i in `cat z`;do cat x.txt |grep $i ;done
+  297  id cuijie
+  298  for i in `cat RESEQ`;do cat z |grep $i ;done
+  299  ls
+  300  cat RESEQ 
+  301  cat x.txt |grep tianshilin
+  302  cat data.sh 
+  303  qacct -h
+  304  qacct --help
+  305  cat data.sh 
+  306  qacct -o -b 201504010000 -e 201504302359 -u tianshilin
+  307  qacct -o -b 201504010000 -e 201504302359 -q reseq.q
+  308  vim x.txt 
+  309  ls
+  310  cat data.sh 
+  311  vim data.sh 
+  312  vim a
+  313  rm -rf a
+  314  ls
+  315  sh data.sh 
+  316  for i in `cat RESEQ`;do cat a |grep $i ;done
+  317  for i in `cat RESEQ`;do cat a |grep $i  > aa;done
+  318  vim aa
+  319  rm -rf aa
+  320  for i in `cat RESEQ`;do cat a |grep $i  >> aa;done
+  321  vim aa
+  322  ls
+  323  cat 321.py 
+  324  ls
+  325  cat x.txt 
+  326  ls
+  327  vim aa
+  328  cat data.sh 
+  329  cat aa |awk '{print $3,$7}'
+  330  cat aa |awk '{print $3,$7}' > 123.txt
+  331  ls
+  332  vim 321.py 
+  333  mkdir April
+  334  ls
+  335  mv x.txt z  April/
+  336  ls
+  337  vim 321.py 
+  338  mv 123.txt x.txt
+  339  python 321.py 
+  340  ls
+  341  vim 321.py 
+  342  cat x.txt 
+  343  ls
+  344  mv x.txt z
+  345  ls
+  346  python 321.py 
+  347  ls
+  348  vim x.txt 
+  349  ls
+  350  clear
+  351  ls
+  352  groupadd CKEY
+  353  vim /etc/group
+  354  id caoyinchuan
+  355  cd /PROJ/root/password/
+  356  ls
+  357  cat group.sh 
+  358  sh group.sh 
+  359  cd 
+  360  clear
+  361  df -h |grep RNA
+  362  cd /PROJ/
+  363  ll
+  364  cd RNA/
+  365  ll
+  366  cd /TJPROJ2/
+  367  LS
+  368  ls
+  369  cd DATA1/
+  370  ls
+  371  cd ../DATA
+  372  ls
+  373  ll
+  374  cd /TJPROJ2/DATA
+  375  ls
+  376  ll
+  377  cd root/
+  378  ls
+  379  vim list
+  380  cat list 
+  381  ls /TJPROJ1/RNA/liwankelan/NHHW150048_Israel_pan_transcriptome/compare/rawdata
+  382  ls
+  383  mkdir 1
+  384  mkdir 2
+  385  ls
+  386  cd ..
+  387  ll
+  388  /share/apps/novo/qinfo 
+  389  ssh 123.151.22.197
+  390  cat /etc/hosts |grep 65
+  391  cat /etc/hosts
+  392  cat /etc/hosts|grep tjnode19
+  393  ifconfig
+  394  cat /etc/hosts |grep tjnode01
+  395  cat /etc/hosts |grep tjnode02
+  396  cat /etc/hosts |grep tjnode03
+  397  cat /etc/hosts |grep tjnode100
+  398  cat /etc/hosts |grep tjnode195
+  399  cat /etc/hosts |grep tjbnode01
+  400  cat /etc/hosts |grep tjbnode02
+  401  cat /etc/hosts |grep tjbnode03
+  402  cat /etc/hosts |grep tjbnode04
+  403  cat /etc/hosts |grep tjbnode05
+  404  cat /etc/hosts |grep tjbnode06
+  405  cat /etc/hosts |grep tjbnode07
+  406  cat /etc/hosts |grep tjbnode08
+  407  cat /etc/hosts |grep tjbnode09
+  408  cat /etc/hosts |grep tjbnode66
+  409  cat /etc/hosts |grep tjnode66
+  410  cat /etc/hosts |grep tjnode67
+  411  cat /etc/hosts |grep tjnode195
+  412  cat /etc/hosts |grep tjnode66
+  413  cat /etc/hosts |grep tjnode65
+  414  cat /etc/hosts |grep tjnode64
+  415  cat /etc/hosts |grep tjnode63
+  416  cat /etc/hosts |grep tjnode62
+  417  cat /etc/hosts |grep tjnode65
+  418  cat /etc/hosts |grep tjnode66
+  419  cat /etc/hosts |grep tjnode67
+  420  cat /etc/hosts |grep tjnode68
+  421  cat /etc/hosts |grep tjnode87
+  422  cat /etc/hosts |grep tjnode72
+  423  cat /etc/hosts |grep tjnode77
+  424  cat /etc/hosts |grep tjnode82
+  425  cat /etc/hosts |grep tjnode80
+  426  cat /etc/hosts |grep tjnode79
+  427  cat /etc/hosts |grep tjnode80
+  428  cat /etc/hosts |grep tjnode81
+  429  cat /etc/hosts |grep tjnode100
+  430  cat /etc/hosts |grep tjnode101
+  431  cat /etc/hosts |grep tjnode120
+  432  cat /etc/hosts |grep tjnode123
+  433  cat /etc/hosts |grep tjnode115
+  434  cat /etc/hosts |grep tjnode111
+  435  cat /etc/hosts |grep tjnode101
+  436  cat /etc/hosts |grep tjnode102
+  437  cat /etc/hosts |grep tjnode120
+  438  cat /etc/hosts |grep tjnode121
+  439  cat /etc/hosts |grep tjnode144
+  440  ssh tjnode03
+  441  ssh tjnode04
+  442  ssh tjnode05
+  443  ssh tjnode180
+  444  cd /home/yang
+  445  cd /home/yanglihua/
+  446  ls
+  447  cd disk/
+  448  ls
+  449  cd re
+  450  ls
+  451  cd ../report/
+  452  ls
+  453  cat isilon.conf 
+  454  cat /etc/hosts |grep tjnode61
+  455  cat /etc/hosts |grep tjnode62
+  456  cat /etc/hosts |grep tjnode63
+  457  df -h
+  458  ssh tjnode59
+  459  ssh tjnode60
+  460  ssh tjnode61
+  461  ssh tjnode62
+  462  ssh tjnode63
+  463  ssh tjnode64
+  464  ssh tjnode65
+  465  ssh tjnode64
+  466  ssh qianbangyi@tjnode64
+  467  cat /etc/hosts |grep tjnode64
+  468  cat /etc/hosts |grep tjnode65
+  469  cd /BJWORK/GR/
+  470  ll
+  471  id zhanwei
+  472  id zhengliangtao
+  473  id zuoqiyang
+  474  df -h |grep GR
+  475  ssh tjnode01
+  476  ssh tjnode03
+  477  w
+  478  ls
+  479  w
+  480  ls
+  481  qhost 
+  482  ls
+  483  vi /etc/host
+  484  vi /etc/hosts
+  485  ssh tjbnode03
+  486  ls
+  487  vi /etc/hosts
+  488  route  -n
+  489  ifconfig 
+  490  vi /etc/hosts
+  491  ssh 10.10.16.248
+  492  route  -n
+  493  ping 10.10.16.248
+  494  vi /etc/hosts
+  495  ssh tjnode03
+  496  ssh tjnode01
+  497  ssh tjnode02
+  498  ssh tjnode04
+  499  ssh tjnode05
+  500  qmon
+  501  ssh tjnode120
+  502  w
+  503  ifconfig 
+  504  ls
+  505  df -h
+  506  cd /export/
+  507  ls
+  508  cd apps/
+  509  ls
+  510  cd useradd/
+  511  ls
+  512  cd ..
+  513  s
+  514  ls
+  515  vi mount.sh 
+  516  cd novo/
+  517  ls
+  518  cd storage_mount/
+  519  ls
+  520  vu mount.sh 
+  521  vi mount.sh 
+  522  vi cluster_mount.sh 
+  523  ssh tjnode58
+  524  clear
+  525  ssh tjnode03
+  526  ls
+  527  ssh tjnode62
+  528  ssh tjnode03
+  529  ssh tjnode82
+  530  ssh tjnode84
+  531  ssh tjnode01
+  532  ssh tjnode05
+  533  cd /PROJ/root/useradd/
+  534  ls
+  535  vim user 
+  536  sh rna.sh 
+  537  qconf -mu rnausers
+  538  qconf -mu mem1users
+  539  qconf -mu mem3users
+  540  qconf -mu mem6users
+  541  cd ../password/
+  542  sh groups
+  543  sh group.sh 
+  544  cat passwd
+  545  cat passwd.sh 
+  546  sh passwd.sh 
+  547  ping tjnode92
+  548  ssh tjnode92
+  549  clear
+  550  ls
+  551  vim /etc/passwd
+  552  cd ../useradd/
+  553  ls
+  554  vim user 
+  555  sh human.sh 
+  556  cd ../password/
+  557  ls
+  558  cp /etc/passwd .
+  559  cp /etc/group .
+  560  ls
+  561  cat passwd
+  562  cat group
+  563  ssh tjnode62
+  564  qstat_u |grep tjnode63
+  565  cd 
+  566  clear
+  567  touch 1
+  568  date
+  569  ll |grep 1
+  570  cd /TJPROJ1/Trash/
+  571  ls
+  572  cd xxx/
+  573  ls
+  574  ll
+  575  touch 1
+  576  ll
+  577  touch 2
+  578  ll
+  579  ll -a
+  580  touch 3
+  581  ll
+  582  ll -a
+  583  rm -rf 1
+  584  rm -rf 2
+  585  rm -rf 3
+  586  ll
+  587  cd ..
+  588  ll
+  589  cat wget 
+  590  ll -a
+  591  cd /TJPROJ2/HUMAN/Disease/WGS.NH140316.kouqiang9li.20141109
+  592  ll
+  593  ll |grep samp
+  594  cd /PROJ/root/password/
+  595  ls
+  596  vim u
+  597  cd ../useradd/
+  598  ls
+  599  vim user 
+  600  sh reseq.sh 
+  601  cd ../password/
+  602  ls
+  603  sh group.sh 
+  604  cat passwd
+  605  cat passwd.sh 
+  606  sh passwd.sh 
+  607  /share/apps/novo/qinfo 
+  608  qselect -U tanxinxin|more
+  609  clear
+  610  cd 
+  611  /share/apps/novo/qinfo 
+  612  ssh tjnode01
+  613  ssh tjnode02
+  614  ssh tjnode03
+  615  qconf -mu resequsers
+  616  ssh tjnode01
+  617  ssh tjnode03
+  618  ssh tjnode01
+  619  cd /share/apps/novo/
+  620  ls
+  621  cd /TJPROJ1/Trash/
+  622  ls
+  623  ll
+  624  cd softinstall/
+  625  ll
+  626  chown -R daijiwei:NOVO expands_1.5.tar.gz 
+  627  ll
+  628  id human
+  629  cd /WORK/HUMAN/
+  630  ls
+  631  ll
+  632  cd human/
+  633  ls
+  634  ll
+  635  pwd
+  636  ll
+  637  cd ..
+  638  ll
+  639  pwd
+  640  cd ..
+  641  ll
+  642  ssh tjnode02
+  643  netstat  -ntpl
+  644  ps -ef |grep 'sge'
+  645  chkconfig --list
+  646  less /etc/services 
+  647  netstat  -ntpl
+  648  ps -ef |grep 'sge'
+  649  less /var/spool/mail/root 
+  650  ps -ef |grep 'sge'
+  651  ls
+  652  ps -ef |grep 'sge'
+  653  ps -ef 
+  654  less /etc/init.d/sgemaster.tjnovomgt
+  655  locate  sge_qmaster
+  656  ls /opt/gridengine/bin/lx26-amd64/
+  657  ls /opt/gridengine/bin/lx26-amd64/sge_qmaster
+  658  /opt/gridengine/bin/lx26-amd64/sge_qmaster
+  659  ps -ef 
+  660  qhsot
+  661  qhost
+  662  netstat  -ntpl
+  663  ls /opt/gridengine/bin/lx26-amd64/
+  664  qstat -u "*"
+  665  netstat  -ntpl
+  666  qhost 
+  667  /opt/gridengine/bin/lx26-amd64/sge_qmaster
+  668  qhost 
+  669  qstat -u "*"
+  670  qhost 
+  671  history 
+  672  netstat  -ntpl
+  673  df -h
+  674  /opt/gridengine/bin/lx26-amd64/sge_qmaster 
+  675  tail /var/spool/mail/root
+  676  netstat  -ntpl
+  677  qhost 
+  678  /opt/gridengine/bin/lx26-amd64/sge_qmaster 
+  679  qhost 
+  680  netstat /etc/rc.d/init/iptables restart
+  681  ps -ef 
+  682  df -h
+  683  netstat  -ntpl
+  684  /opt/gridengine/bin/lx26-amd64/sge_qmaster 
+  685  netstat  -ntpl
+  686  less /var/log/messages
+  687  iptables -L
+  688  qhost 
+  689  ls /etc/init.d/
+  690  service  iptables
+  691  service  iptables stauts
+  692  service  iptables status
+  693  service  iptables 
+  694  ifconfig 
+  695  vi /etc/hosts
+  696  qconf -sq 
+  697  qconf -sql
+  698  /opt/gridengine/bin/lx26-amd64/sge_qmaster  
+  699  top
+  700  w
+  701  ssh tjnode01
+  702  qhsot
+  703  qhost
+  704  /opt/gridengine/bin/lx26-amd64/sge_qmaster  
+  705  qhsot
+  706  qhost
+  707  ssh tjnode09
+  708  vim /etc/init.d/sgemaster.tjnovomgt 
+  709  service iptables
+  710  service iptables stop
+  711  /opt/gridengine/bin/lx26-amd64/sge_qmaster  
+  712  ps -ef 
+  713  qhost
+  714  /opt/gridengine/bin/lx26-amd64/sge_qmaster
+  715  /opt/gridengine/bin/lx26-amd64/sge_qmaster
+  716  qhost
+  717  ls /opt/
+  718  ls /opt/gridengine/
+  719  qhost 
+  720  cd /opt/gridengine/default/spool
+  721  ls
+  722  ls qmaster/
+  723  less  qmaster/qmaster.pid
+  724  cp   qmaster/qmaster.pid /root/
+  725  ls /root/
+  726  ls
+  727  cd qmaster/
+  728  ls
+  729  less messages 
+  730  tail -100 messages 
+  731  ls
+  732  rm qmaster.pid 
+  733  /opt/gridengine/bin/lx26-amd64/sge_qmaster
+  734  ls
+  735  less qmaster.pid 
+  736  qhsot
+  737  qhost
+  738  ls
+  739  qhost
+  740  ls
+  741  cd jobs
+  742  ls
+  743  cd 00/
+  744  ls
+  745  cd ..
+  746  ls
+  747  cd ..
+  748  ls
+  749  cd cqueues/
+  750  ls
+  751  vi xten.q 
+  752  vi all.q
+  753  ls
+  754  exit
+  755  ssh 10.10.16.120
+  756  ssh tjnode120
+  757  qhost
+  758  ssh tjnode02
+  759  history 
+  760  cd /opt/gridengine/default/spool/
+  761  ls
+  762  cd qmaster/
+  763  ls
+  764  cd exec_hosts/
+  765  ls
+  766  less tjnode63.local
+  767  cd ..
+  768  ls
+  769  less -S messages 
+  770  tail -1000  messages 
+  771  tail -3000  messages 
+  772  tail -3000  messages  |less 
+  773  history 
+  774  qhost 
+  775  vi /etc/hosts
+  776  ssh tjnode110
+  777  less /var/spool/gridengine/qmaster/messages
+  778  less /var/spool/gridengine/qmaster/messages 
+  779  ls /var/spool/gridengine/qmaster/
+  780  ls /var/spool/
+  781  ls /var/spool/gdm/
+  782  history 
+  783  ls /opt/gridengine/bin/lx26-amd64/sge_qmaster 
+  784  ls  /opt/gridengine/bin/lx26-amd64/
+  785  ls  /opt/gridengine/bin/
+  786  vim   /opt/gridengine/bin/rocks-qlogin.sh 
+  787  ls  /opt/gridengine/bin/
+  788  ls  /opt/gridengine/bin/lx26-amd64/
+  789  less   /opt/gridengine/bin/lx26-amd64/sge_qmaster 
+  790  /opt/gridengine/bin/lx26-amd64/sge_qmaster  
+  791  ls /opt/gridengine/default/spool/
+  792  ls /opt/gridengine/default/
+  793  ls /opt/gridengine/default/common/
+  794  vim /opt/gridengine/default/common/cluster_name 
+  795  vim /opt/gridengine/default/common/settings.sh 
+  796  rocks run host ?
+  797  rocks run ?
+  798  rocks list host
+  799  ls
+  800  w
+  801  ls /var/spool/
+  802  cd /opt/gridengine/default/spool/qmaster/
+  803  ls
+  804  tail /opt/gridengine/default/spool/qmaster/messages 
+  805  ls
+  806  /etc/init.d/sgemaster.tjnovomgt status
+  807  /etc/init.d/sgemaster.tjnovomgt start
+  808  ps auxww|grep sge
+  809  qhost
+  810  tail /var/log/messages
+  811  cd /opt/gridengine/default/common/
+  812  ls
+  813  cd /opt/gridengine/default/spool/qmaster/
+  814  tail -n 20 messages 
+  815  cd /opt/gridengine/default/common/
+  816  ls
+  817  cd -
+  818  ls
+  819  tail -n 100 messages |more
+  820  tail -n 200 messages |more
+  821  tail -n 400 messages |more
+  822  tail -n 600 messages |more
+  823  ls
+  824  cd /opt/gridengine/default/common/local_conf/
+  825  ls
+  826  ll|grep 62
+  827  cd ..
+  828  ls
+  829  find ./|grep node62
+  830  cd local_conf/
+  831  ls
+  832  ll
+  833  cd ..
+  834  ls
+  835  ll
+  836  cd ..
+  837  ls
+  838  cd common/
+  839  ls
+  840  cd ..
+  841  ll
+  842  cd spool/qmaster/
+  843  ls
+  844  find ./|grep 62
+  845  ls
+  846  find ./|grep node62
+  847  cd qinstances/test.q/
+  848  ls
+  849  mv tjnode62.local /tmp/
+  850  cd
+  851  /etc/init.d/sgemaster.tjnovomgt start
+  852  ps auxww|grep sge
+  853  tail -n 200 /opt/gridengine/default/spool/qmaster/messages 
+  854  tail -n 200 /opt/gridengine/default/spool/qmaster/messages |more
+  855    cd /opt/gridengine/default/spool/qmaster/
+  856  ls
+  857  ll
+  858  cd cqueues/ll
+  859  cd cqueues
+  860  ll
+  861  cd ..
+  862  ls
+  863  cd qinstances/
+  864  ls
+  865  ll
+  866  cd
+  867  rocks list host
+  868  ls
+  869  tail -n 100 /var/log/messages|more
+  870  vim /etc/init.d/sgemaster.tjnovomgt 
+  871  uname -a
+  872  cat /etc/issue
+  873  cd /opt/gridengine/util/
+  874  ls
+  875  cat dl
+  876  cat dl.sh 
+  877   SGE_DEBUG_LEVEL="2 2 0 0 0 0 2 0"; export SGE_DEBUG_LEVEL; SGE_ND="true"; export SGE_ND ;;
+  878   SGE_DEBUG_LEVEL="2 2 0 0 0 0 2 0"; export SGE_DEBUG_LEVEL; SGE_ND="true"; export SGE_ND ;  进入调试模式
+  879  cd
+  880  /etc/init.d/sgemaster.tjnovomgt start
+  881  cat -n 760 /etc/init.d/sgemaster.tjnovomgt 
+  882  /etc/init.d/sgemaster.tjnovomgt start
+  883  exit
+  884  ps auxww|grep sge
+  885  cd /opt/gridengine/default/spool/qmaster/
+  886  find ./|grep 3634483
+  887  cd /opt/gridengine/
+  888  find ./|grep 3634483
+  889  cd
+  890  locate 3634483
+  891  cd /opt/gridengine/default/spool/
+  892  ls
+  893  cd qmaster/
+  894  ls
+  895  grep 3634483 messages 
+  896  ls
+  897  find ./|grep 36
+  898  find ./|grep 3634
+  899  find ./|grep 363
+  900  find ./|grep 484
+  901  find ./|grep 483
+  902  cd jobs/00/0363/4483 
+  903  cd jobs/00/0363/
+  904  more 4483 
+  905  cd /opt/gridengine/
+  906  find .|grep 363
+  907  cd default/spool/qmaster/job/00/0363
+  908  cd default/spool/qmaster/jobs/00/036
+  909  cd default/spool/qmaster/jobs/00/0363
+  910  ls
+  911  ll
+  912  more 4483 
+  913   cd ..
+  914  ls
+  915  mv 0363/ /tmp/
+  916  qhost
+  917  cd
+  918  qs
+  919  qstat -u \*
+  920  qhost
+  921  /etc/init.d/sgemaster.tjnovomgt stop
+  922  exit
+  923  history 

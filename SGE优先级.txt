@@ -1,0 +1,34 @@
+首页 > 精品文库 > Grid Engine 调整排队任务的优先级
+Grid Engine 调整排队任务的优先级
+0条评论
+
+Grid Engine 默认排队任务的优先级是靠时间积累增加，但我想指定某些排队的任务优先被执行。例如要求 CPU 较多的任务就比单CPU的多个任务更难被执行。
+
+查看任务的优先级
+
+qstat -pri
+更改任务的优先级(<JOB_ID>代表某个任务号)
+
+qalter -p +1000 <JOB_ID>
+结果无效，排队任务的 prior 没有改变。
+
+查看 man 手册
+
+man 5 sge_priority
+网页版本：http://linux.die.net/man/5/sge_priority
+
+其中说明优先级是靠下面这个公式计算出来的：
+
+prio = weight_priority * pprio + weight_urgency * nurg + weight_ticket * ntckts
+
+The higher a job's priority value, the earlier it gets dispatched.
+
+需要修改任务安排(scheduler)设置中的 weight_priority ，它默认为零，所以 qalter 改变 pprio 影响不了最终的 prio 。
+
+qconf -msconf
+我修改为： weight_priority                   0.500000
+
+然后再执行命令，可以看到排队任务的 prior 改变了。
+
+qalter -p +1000 <JOB_ID>
+qstat -pri

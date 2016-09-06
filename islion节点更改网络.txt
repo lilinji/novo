@@ -1,0 +1,45 @@
+TJNOVOGENE-ISILON4-9# isi devices
+Node 9, [ATTN]
+  Bay 1        Lnum 35      [HEALTHY]      SN:PN1286P3G22RAH      /dev/da1   
+  Bay 2        Lnum 34      [HEALTHY]      SN:PN2286P3G2JYVJ      /dev/da2   
+  Bay 3        Lnum 17      [HEALTHY]      SN:Z1Y3K9HG            /dev/da19  
+  Bay 4        Lnum 16      [HEALTHY]      SN:Z1Y3KD5E            /dev/da20  
+  Bay 5        Lnum 33      [HEALTHY]      SN:PN2286P3G2LAWJ      /dev/da3   
+  Bay 6        Lnum 15      [HEALTHY]      SN:PN1286P3G22R8H      /dev/da21  
+  Bay 7        Lnum 14      [HEALTHY]      SN:Z1Y3KCMG            /dev/da22  
+  Bay 8        Lnum 13      [HEALTHY]      SN:Z1Y3KFCY            /dev/da23  
+  Bay 9        Lnum N/A     [REPLACE]      SN:N/A                 N/A        
+  Bay 10       Lnum 12      [HEALTHY]      SN:PN1286P3G2G7SH      /dev/da24  
+  Bay 11       Lnum 11      [HEALTHY]      SN:Z1Y3KCMB            /dev/da25  
+  Bay 12       Lnum 10      [HEALTHY]      SN:Z1Y3K9FR            /dev/da26  
+  Bay 13       Lnum 31      [HEALTHY]      SN:PN2286P3G2RLVJ      /dev/da5   
+  Bay 14       Lnum 30      [HEALTHY]      SN:PN2286P3G2RL0J      /dev/da6   
+  Bay 15       Lnum 29      [HEALTHY]      SN:Z1Y3KD66            /dev/da7   
+  Bay 16       Lnum 9       [HEALTHY]      SN:Z1Y3KDBK            /dev/da27  
+  Bay 17       Lnum 28      [HEALTHY]      SN:PN2286P3G2N1ZJ      /dev/da8   
+  Bay 18       Lnum 27      [HEALTHY]      SN:PN2286P3G2JBUJ      /dev/da9   
+  Bay 19       Lnum 26      [HEALTHY]      SN:Z1Y3KE1P            /dev/da10  
+  Bay 20       Lnum 8       [HEALTHY]      SN:Z1Y3KCN8            /dev/da28  
+  Bay 21       Lnum 25      [HEALTHY]      SN:PN2286P3G2J6GJ      /dev/da11  
+  Bay 22       Lnum 24      [HEALTHY]      SN:PN1286P3G2DT2H      /dev/da12  
+  Bay 23       Lnum 7       [HEALTHY]      SN:Z1Y3KF4M            /dev/da29  
+  Bay 24       Lnum 6       [HEALTHY]      SN:Z1Y3KF7F            /dev/da30  
+  Bay 25       Lnum 5       [HEALTHY]      SN:Z1Y3KD3P            /dev/da31  
+  Bay 26       Lnum 4       [HEALTHY]      SN:Z1Y3K9FT            /dev/da32  
+  Bay 27       Lnum 3       [HEALTHY]      SN:Z1Y3KCYP            /dev/da33  
+  Bay 28       Lnum 23      [HEALTHY]      SN:Z1Y3KDQP            /dev/da13  
+  Bay 29       Lnum 2       [HEALTHY]      SN:Z1Y3K9GG            /dev/da34  
+  Bay 30       Lnum 22      [HEALTHY]      SN:Z1Y3KCYJ            /dev/da14  
+  Bay 31       Lnum 1       [HEALTHY]      SN:Z1Y3K9JJ            /dev/da35  
+  Bay 32       Lnum 21      [HEALTHY]      SN:Z1Y3KDQR            /dev/da15  
+  Bay 33       Lnum 0       [HEALTHY]      SN:Z1Y3KD1B            /dev/da36  
+  Bay 34       Lnum 20      [HEALTHY]      SN:Z1Y3KDDF            /dev/da16  
+  Bay 35       Lnum 19      [HEALTHY]      SN:Z1Y3KDFP            /dev/da17  
+  Bay 36       Lnum 18      [HEALTHY]      SN:Z1Y3KFE8            /dev/da18  
+TJNOVOGENE-ISILON4-9# isi_hw_status -i
+  SerNo: SX410-251543-0035
+ Config: 400-0049-03
+FamCode: X
+ChsCode: 4U
+GenCode: 10
+Product: X410-4U-Dual-64GB-2x1GE-2x10GE SFP+-108TB

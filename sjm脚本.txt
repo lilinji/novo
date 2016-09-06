@@ -1,0 +1,21 @@
+job_begin
+        name abc
+        sched_options -q all.q -w n -V -l vf=5G,p=4 
+        cmd sh /allwegene/dat1/PROJECT/abc.sh
+job_end
+
+job_begin
+        name abc2
+        sched_options -q all.q -w n -V -l vf=5G,p=4
+        cmd sh /allwegene/dat1/PROJECT/abc2.sh
+job_end
+
+order abc after abc2
+
+log_dir /allwegene/dat2/work/luonana/luonana/Pipeline/testcancerwes/WES.NHM150817.zhengda5litumor.20160122/testlog
+6132'tDMNG
+
+
+export PATH=/usr/bin:$PATH
+export PYTHONPATH=/usr/lib64/python2.6/site-packages:/usr/lib/python2.6/site-packages:$PYTHONPATH 
+

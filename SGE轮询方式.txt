@@ -1,0 +1,2 @@
+轮询方式怎么设置
+allocation_rule    $round_robin

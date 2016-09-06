@@ -1,0 +1,2 @@
+qmgr -c "set queue queuename max_user_run = num"
+设置每个队列用户的最大提交数，queuename是你的队列名称，num是你想要用户提交的作业个数；按你集群具体情况来设置吧

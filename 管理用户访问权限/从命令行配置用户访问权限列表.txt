@@ -1,0 +1,29 @@
+要从命令行配置用户访问权限列表，请键入以下命令带上适当的选项。
+# qconf options
+以下为可用的选项：
+■ qconf -au user-name[,...]access-list-name[,...]
+-au 选项（添加用户） 向指定的访问权限列表中添加一个或多个用户。
+
+■ qconf -Au filename
+-Au 选项（从文件添加用户访问权限列表）使用配置文件 filename 添加访问权限列
+表。
+
+■ qconf -du user-name[,...] access-list-name [,...]
+-du 选项（删除用户）从指定访问权限列表删除一个或多个用户。
+
+
+■ qconf -dul access-list-name[,...]
+-dul 选项（删除用户列表）完全删除用户组列表。
+
+■ qconf -mu access-list-name
+-mu 选项（修改用户访问权限列表）修改指定的访问权限列表。
+■ qconf -Mu filename
+
+-Mu 选项（从文件修改用户访问权限列表）使用配置文件 filename 修改指定访问权限
+列表。
+
+■ qconf -su access-list-name[,...]
+-su 选项（显示用户访问权限列表）显示指定的访问权限列表。
+
+■ qconf -sul
+-sul 选项（显示用户访问权限列表）显示所有当前定义的访问权限列表。

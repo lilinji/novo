@@ -1,0 +1,18 @@
+[root@novogene ~]# qmod --help
+usage: qmod [options]
+   [-c job_wc_queue_list]  clear error state         清除错误
+   [-cj job_list]          clear job error state     job清除错误
+   [-cq wc_queue_list]     clear queue error state   队列清除错误
+   [-d wc_queue_list]      disable                   关闭队列
+   [-e wc_queue_list]      enable                    打开队列
+   [-f]                    force action
+   [-help]                 print this help
+   [-r job_wc_queue_list]  reschedule jobs (running in queue)
+   [-rj job_list]          reschedule jobs
+   [-rq wc_queue_list]     reschedule all jobs in a queue
+   [-s job_wc_queue_list]  suspend                 暂停队列
+   [-sj job_list]          suspend jobs            暂停任务
+   [-sq wc_queue_list]     suspend queues      
+   [-us job_wc_queue_list] unsuspend               开启队列
+   [-usj job_list]         unsuspend jobs          开启任务
+   [-usq wc_queue_list]    unsuspend queues

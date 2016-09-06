@@ -1,0 +1,25 @@
+要从命令行配置队列日历，请键入以下命令并带上适当的选项：
+% qconf options
+以下为可用的选项：
+■ qconf -acal calendar-name
+-acal 选项（添加日历）向群集添加一个名为 calendar-name 的新的日历配置。屏幕
+上将显示一个带有配置模板的编辑器，您可以用它来定义日历。
+
+■ qconf -Acal filename
+-Acal 选项（从文件添加日历）向群集添加一个新的日历配置。将从指定文件读取
+要添加的日历。
+
+■ qconf -dcal calendar-name [,...]
+-dcal 选项（删除日历）删除指定的日历。
+
+■ qconf -mcal calendar-name
+-mcal 选项（修改日历）可修改名为 calendar-name 的现有日历配置。编辑器将打开
+calendar-name，使您可以更改定义。
+
+■ qconf -Mcal filename
+-Mcal 选项（从文件修改日历）可修改现有日历的配置。从指定文件读取要修改的
+日历。
+■ qconf -scal calendar-name
+-scal 选项（显示日历）可显示 calendar-name 的配置。
+■ qconf -scall
+-scall 选项（显示日历列表）可显示所有已配置日历的列表。

@@ -1,0 +1,34 @@
+■qconf -ahgrp [host-group-name]
+-ahgrp 选项（添加主机组）向主机组列表添加一个新的主机组。 有关配置格式的
+
+■qconf -Ahgrp [filename]
+-Ahgrp 选项（从文件添加主机组）将显示一个编辑器，它包含了在 filena
+的主机组配置。编辑器既可以是默认的 vi 编辑器也可以是与 EDITOR 环境
+的编辑器。通过更改配置并将其保存到磁盘，便完成了对主机组的配置。
+
+■qconf -dhgrp host-group-name
+-dhgrp 选项（删除主机组）从主机组列表中删除指定的主机组。该主机组配置中的
+所有条目都将丢失
+
+■qconf -mhgrp host-group-name
+-mhgrp 选项（修改主机组）将显示一个编辑器，该编辑器含有以指定主机组的配置
+作为的模板。编辑器既可以是默认的 vi 编辑器也可以是与 EDITOR 环境变量对应的
+编辑器。通过更改模板并将其保存到磁盘，即修改了主机组的配置。
+
+■qconf -Mhgrp filename
+-Mhgrp 选项（从文件修改主机组）使用 filename 的内容作为主机组的配置模板。
+定文件中的配置必须参考已有的主机组。主机组的配置将被此文件的内容替代。
+
+■qconf -shgrp host-group-name
+-shgrp 选项（显示主机组）显示指定主机组的配置。
+
+■ qconf -shgrp_tree host-group-name
+-shgrp_tree 选项（以树状显示主机组）以树状方式显示指定主机组及其子主机组
+的配置。
+
+■ qconf -shgrp_resolved host-group-name
+-shgrp_resolved 选项（显示带有已解析主机列表的主机组）显示带有已解析主
+机列表的指定主机组的配置。
+
+■ qconf -shgrpl
+-shgrpl 选项（显示主机组列表）会显示所有主机组的列表。

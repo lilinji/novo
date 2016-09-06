@@ -1,0 +1,8 @@
+无效的主机名
+以下为无效的、保留的或因其他原因不允许使用的主机名列表：
+global
+template
+all
+default
+unknown
+none

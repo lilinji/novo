@@ -1,0 +1,28 @@
+要从命令行中止 Grid Engine 系统守护进程，请使用以下的一个命令：
+% qconf -ke[j] {hostname,... | all}
+% qconf -ks
+% qconf -km
+
+
+
+必须具有管理人员或者操作人员的权限才能使用这些命令。
+
+■ qconf –ke 命令可关闭执行守护进程。然而，它并没有取消活动的作业。系统中未
+运行 sge_execd 时完成的作业不会报告给 sge_qmaster，直到 sge_execd 重新
+启动为止。不过，作业报告并没有丢失。
+
+qconf -kej 命令中止所有当前活动的作业并中止所有执行守护进程。
+可以使用以逗号分隔的列表列出所有要关闭的执行主机，或者指定 all 以关闭群集
+中所有的执行主机。
+
+■ qconf -ks 命令关闭调度程序 sge_schedd。
+
+■ qconf -km 命令强制终止 sge_qmaster 进程。
+
+如果希望关闭之前等候所有活动作业完成，
+请对每个群集队列、队列实例或者队列域运行 qmod -dq 命令，
+然后运行前文所述的 qconf 系列步骤。
+
+% qmod -dq {cluster-queue | queue-instance | queue-domain}
+qmod -dq 命令可防止新的作业被安排到已禁用的队列实例中。接下来您需要等候，直
+到队列实例中不再存在运行中的作业，再中止守护进程。

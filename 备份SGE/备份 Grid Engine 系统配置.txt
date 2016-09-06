@@ -1,0 +1,86 @@
+
+实现 Grid Engine 系统配置文件的自动备份。自动备份过程使用一个名为 
+backup_template.conf 的配置文件。默认情况下，备份配置文件为
+
+
+$SGE_ROOT/util/install_modules/backup_template.conf。
+
+备份配置文件必须定义的元素包括：
+
+■ Grid Engine 系统 root 目录。
+
+■ Grid Engine 系统 cell 目录。
+
+■ Grid Engine 系统 backup 目录。
+
+■ 备份类型。该备份可以就是 Grid Engine 系统配置文件，也可以是包含该配置文件的
+一个 tar 压缩文件。
+
+■ 备份文件的文件名。
+
+备份模板文件类似于以下实例：
+##################################################
+# Autobackup Configuration File Template
+##################################################
+# Please, enter your SGE_ROOT here (mandatory)
+SGE_ROOT="/opt/gridengine"     默认
+
+# Please, enter your SGE_CELL here (mandatory)
+SGE_CELL="/default"  默认 
+
+################不知道目录的去 /etc/profile.d/sge-binaries.sh 这里面查找。
+
+# Please, enter your Backup Directory here
+# After backup you will find your backup files here (mandatory)
+# The autobackup will add a time /date combination to this dirname
+# to prevent an overwriting!
+
+#########这一行的意思是 备份在 /backup/novogene 目录下 以SGE 文件为开头
+BACKUP_DIR="/backup/novogene/SGE"  
+
+# Please, enter true to get a tar/gz package
+# and false to copy the files only (mandatory)
+TAR="true"
+# Please, enter the backup file name here. (mandatory)
+BACKUP_FILE="backup.tar"
+
+#####################################################################################
+
+
+完整实例：
+#---------------------------------------------------------------------------------------
+##################################################
+# Autobackup Configuration File Template
+##################################################
+
+# Please, enter your SGE_ROOT here (mandatory)
+SGE_ROOT="/opt/gridengine"
+
+# Please, enter your SGE_CELL here (mandatory)
+SGE_CELL="/default"
+
+# Please, enter your Backup Directory here
+# After backup you will find your backup files here (mandatory)
+# The autobackup will add a time /date combination to this dirname
+# to prevent an overwriting!
+BACKUP_DIR="/backup/novogene/SGE"
+
+# Please, enter true to get a tar/gz package
+# and false to copy the files only (mandatory)
+TAR="true"
+
+# Please, enter the backup file name here. (mandatory)
+BACKUP_FILE="backup.tar"
+#--------------------------------------------------------------------------------------------
+
+要启动自动备份过程，请在 sge_qmaster 主机上键入以下命令：
+inst_sge -bup -auto backup-conf
+backup-conf 是备份配置文件的完整路径。
+举例：
+	/opt/gridengine/inst_sge  -bup -auto /opt/gridengine/util/install_modules/backup_template.conf
+
+
+
+注 – 备份配置文件之前，不必关闭任何 Grid Engine 系统守护进程。
+备份文件创建在 BACKUP_FILE 指定的目录中。还会在此目录中创建一个名为
+.log 的备份日志文件。

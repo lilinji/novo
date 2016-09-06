@@ -1,0 +1,9 @@
+要配置项目访问权限参数，请单击 “Project Access” 选项卡
+可以指定以下参数：
+■ 可用的项目。允许访问队列或被拒绝访问队列的项目。
+
+如果将作业提交给允许访问队列的项目列表中的项目，则作业具有访问队列的权限。
+而提交给被拒绝访问队列的项目的作业，则不会被分派到队列中。
+
+要添加或修改项目访问权限，请单击 “Available Projects” 列表与 “Allow Project
+Access” 和 “Deny Project Access” 列表之间的按钮以打开 “Project Configuration” 对话框

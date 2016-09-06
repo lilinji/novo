@@ -1,0 +1,14 @@
+qconf -aq 32G.q
+
+
+This brings up a template queue configuration file for the new queue, probably using Vim. Edit it to your liking and save it, then exit. Usually, you will just leave everything as the template gave it to you, except:
+
+change "qname" to your queue name
+add the hosts you want in the queue to "hostlist"
+for "slots", put in a comma-delimited list of entries in the format:
+  [<hostname>=<number of jobs>]
+indicating the maximum number of jobs allowed to execute simultaneously on each host (usually that's just the number of CPUs on that host), plus a leading "1" for no reason that I can readily identify (for all I know, it's not necessary), e.g.:
+
+   slots   1,[tjnodeXX=16],[tjnodeXX=16],[tjnodeXX=16] \
+	   [tjnodeXX=16],[tjnodeXX=16],[tjnodeXX=16] \
+	   [tjnodeXX=16],[tjnodeXX=16]
